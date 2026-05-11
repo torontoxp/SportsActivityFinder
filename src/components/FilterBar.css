@@ -1,0 +1,325 @@
+/* ─── Filter Bar ─────────────────────────────────────────────────────────── */
+.filter-bar {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(22, 87, 136, 0.06);
+  position: sticky;
+  top: var(--navbar-h);
+  z-index: 90;
+}
+
+.filter-bar-inner {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+/* Header row */
+.filter-bar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filter-label-main {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-light);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.filter-result-count {
+  margin-left: auto;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: var(--primary-xlight);
+  padding: 3px 12px;
+  border-radius: var(--radius-full);
+}
+
+.filter-clear-btn {
+  padding: 4px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--danger);
+  background: #fff0f0;
+  border: none;
+  border-radius: var(--radius-full);
+  transition: var(--transition);
+}
+
+.filter-clear-btn:hover {
+  background: #ffe4e4;
+}
+
+.filter-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.filter-groups.collapsed {
+  display: none;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-group-label {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text-light);
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+/* Pills */
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.filter-pill {
+  padding: 5px 13px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-medium);
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-full);
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.filter-pill:hover {
+  border-color: var(--primary-light);
+  color: var(--primary);
+  background: var(--primary-xlight);
+}
+
+.filter-pill.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+  box-shadow: 0 2px 8px rgba(22, 87, 136, 0.25);
+}
+
+/* Free Toggle */
+.filter-group-toggle {
+  align-self: center;
+}
+
+.filter-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 14px 5px 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-medium);
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-full);
+  transition: var(--transition);
+}
+
+.filter-toggle:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.filter-toggle.active {
+  background: var(--primary-xlight);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.filter-toggle-track {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  background: var(--border);
+  border-radius: 10px;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.filter-toggle.active .filter-toggle-track {
+  background: var(--primary);
+}
+
+.filter-toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  background: var(--white);
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-toggle.active .filter-toggle-thumb {
+  transform: translateX(16px);
+}
+
+/* ── Centre Dropdown ─────────────────────────────────────────── */
+.centre-dropdown-wrapper {
+  position: relative;
+}
+
+.centre-dropdown-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 13px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-medium);
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.centre-dropdown-trigger:hover {
+  border-color: var(--primary-light);
+  color: var(--primary);
+  background: var(--primary-xlight);
+}
+
+.centre-dropdown-trigger.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+  box-shadow: 0 2px 8px rgba(22, 87, 136, 0.25);
+}
+
+.centre-dropdown-arrow {
+  font-size: 0.6rem;
+  opacity: 0.7;
+}
+
+.centre-dropdown-panel {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 200;
+  min-width: 300px;
+  max-width: 400px;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(22, 87, 136, 0.15);
+  overflow: hidden;
+  animation: dropdownFadeIn 0.15s ease-out;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.centre-search-wrap {
+  padding: 10px 12px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.centre-search-input {
+  width: 100%;
+  padding: 7px 12px;
+  font-size: 0.82rem;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+  background: var(--surface);
+  box-sizing: border-box;
+}
+
+.centre-search-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(22, 87, 136, 0.08);
+}
+
+.centre-list {
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.centre-list-empty {
+  padding: 14px 16px;
+  font-size: 0.82rem;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.centre-list-item {
+  padding: 0;
+}
+
+.centre-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  color: var(--text);
+  transition: background 0.15s;
+}
+
+.centre-checkbox-label:hover {
+  background: var(--primary-xlight);
+}
+
+.centre-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.centre-checkbox-name {
+  line-height: 1.3;
+}
+
+@media (max-width: 700px) {
+  .filter-groups {
+    gap: 10px;
+  }
+
+  .filter-bar {
+    position: static;
+  }
+
+  .centre-dropdown-panel {
+    left: auto;
+    right: 0;
+    min-width: 260px;
+    max-width: calc(100vw - 40px);
+  }
+}

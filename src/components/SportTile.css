@@ -1,0 +1,104 @@
+/* ─── Sport Tile Card ────────────────────────────────────────────────────── */
+.sport-tile {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 32px 20px 28px;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  text-align: center;
+  transition: var(--transition);
+  /* reset button defaults */
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+/* Animated glow blob */
+.sport-tile-glow {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(22, 87, 136, 0.10) 0%, transparent 70%);
+  border-radius: 50%;
+  transition: var(--transition);
+  pointer-events: none;
+}
+
+/* Hover state */
+.sport-tile:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-lg), 0 0 0 3px rgba(22, 87, 136, 0.08);
+  transform: translateY(-4px);
+}
+
+.sport-tile:hover .sport-tile-glow {
+  transform: translateX(-50%) scale(2.5);
+  background: radial-gradient(circle, rgba(22, 87, 136, 0.13) 0%, transparent 70%);
+}
+
+.sport-tile:hover .sport-tile-icon {
+  transform: scale(1.12);
+}
+
+.sport-tile:hover .sport-tile-arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+.sport-tile:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+/* Content */
+.sport-tile-icon {
+  font-size: 3.8rem;
+  line-height: 1;
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 1;
+}
+
+.sport-tile-img {
+  width: 3.8rem;
+  height: 3.8rem;
+  object-fit: contain;
+  display: block;
+}
+
+.sport-tile-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: -0.01em;
+  z-index: 1;
+}
+
+.sport-tile-count {
+  font-size: 0.78rem;
+  color: var(--primary);
+  font-weight: 600;
+  background: var(--primary-xlight);
+  padding: 2px 10px;
+  border-radius: var(--radius-full);
+  z-index: 1;
+}
+
+.sport-tile-arrow {
+  position: absolute;
+  bottom: 14px;
+  right: 16px;
+  font-size: 0.9rem;
+  color: var(--primary);
+  opacity: 0;
+  transition: var(--transition);
+}

@@ -1,0 +1,41 @@
+/* ─── App Shell ──────────────────────────────────────────────────────────── */
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+
+/* ─── Footer ─────────────────────────────────────────────────────────────── */
+.footer {
+  margin-top: auto;
+  background: var(--primary-dark);
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  padding: 20px 24px;
+  font-size: 0.82rem;
+  letter-spacing: 0.01em;
+}
+.footer strong { color: rgba(255,255,255,0.9); }
+
+.footer-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.footer-logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--white);
+  padding: 6px 8px;
+  margin-left: 10px;
+  border-radius: 6px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s;
+}
+
+.footer-logo-wrap:hover {
+  transform: translateY(-1px);
+}
+
+.footer-logo {
+  height: 14px;
+  display: block;
+}
