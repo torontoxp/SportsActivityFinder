@@ -30,6 +30,8 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+        env:
+          VITE_API_BASE_URL: https://flv2sa1raf.execute-api.ca-central-1.amazonaws.com/api
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
