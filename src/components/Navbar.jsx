@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-inner container">
         <Link to="/" className="navbar-brand">
-          <img src="/TorontoXP_logo.png" alt="Toronto Life Logo" className="navbar-logo" />
+          <img src={`${import.meta.env.BASE_URL}TorontoXP_logo.png`} alt="Toronto Life Logo" className="navbar-logo" />
           <div className="navbar-brand-text">
             <span className="navbar-title">TorontoXP - Sports Finder</span>
             <span className="navbar-tagline">Community Centre Activity Search</span>

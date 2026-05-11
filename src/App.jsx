@@ -21,7 +21,7 @@ export default function App() {
                 <img
                   className="footer-logo"
                   alt="Crafesign logo"
-                  src="/CrafesignLogo.svg"
+                  src={`${import.meta.env.BASE_URL}CrafesignLogo.svg`}
                 />
               </a>
             </span>
