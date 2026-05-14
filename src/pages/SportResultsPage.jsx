@@ -22,10 +22,16 @@ const SPORT_ICONS = {
   "Multi-Sport": "🤹",
   "Dodgeball": "🤾",
   "Netball": `${import.meta.env.BASE_URL}Netball.png`,
-  "Bocce": "🥎",
-  "Carpet Bowling": "🎳",
+  "Bocce": `${import.meta.env.BASE_URL}Bocce.png`,
+  "Carpet Bowling": `${import.meta.env.BASE_URL}Bowling.png`,
   "Skateboarding": "🛹",
   "Ultimate": "🥏",
+  "Archery": "🏹",
+  "Baseball": "⚾",
+  "Cricket": "🏏",
+  "Golf": "⛳",
+  "Lawn Bowling": `${import.meta.env.BASE_URL}Bowling.png`,
+  "Tennis": "🎾",
 };
 
 const DEFAULT_FILTERS = {
