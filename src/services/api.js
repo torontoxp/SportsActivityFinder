@@ -11,12 +11,9 @@ export async function fetchSports() {
   const { data } = await axios.get(`${API_BASE}/sports`);
   if (data && Array.isArray(data.sports)) {
     data.sports = data.sports.map(s => {
-      if (s.sport === "Pickleball") return { ...s, icon: `${import.meta.env.BASE_URL}Pickleball.png` };
-      if (s.sport === "Netball") return { ...s, icon: `${import.meta.env.BASE_URL}Netball.png` };
-      if (s.sport === "Squash") return { ...s, icon: `${import.meta.env.BASE_URL}Squash.png` };
-      if (s.sport === "Bocce") return { ...s, icon: `${import.meta.env.BASE_URL}Bocce.png` };
-      if (s.sport === "Carpet Bowling") return { ...s, icon: `${import.meta.env.BASE_URL}Bowling.png` };
-      if (s.sport === "Lawn Bowling") return { ...s, icon: `${import.meta.env.BASE_URL}Bowling.png` };
+      if (s.icon && s.icon.startsWith('/')) {
+        return { ...s, icon: `${import.meta.env.BASE_URL}${s.icon.slice(1)}` };
+      }
       return s;
     });
   }
