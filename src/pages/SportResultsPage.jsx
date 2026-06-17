@@ -6,6 +6,7 @@ import ScheduleTable from "../components/ScheduleTable";
 import "./SportResultsPage.css";
 
 const SPORT_ICONS = {
+  "Lacrosse": "🥍",
   "Table Tennis": "🏓",
   "Badminton": "🏸",
   "Basketball": "🏀",
@@ -18,6 +19,7 @@ const SPORT_ICONS = {
   "Squash": `${import.meta.env.BASE_URL}Squash.png`,
   "Volleyball": "🏐",
   "Ball Hockey": "🏑",
+  "Roller Hockey": `${import.meta.env.BASE_URL}RollerHockey.png`,
   "Open Gym": "🤸",
   "Multi-Sport": "🤹",
   "Dodgeball": "🤾",
