@@ -1,0 +1,104 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: Toronto Life - Sports Activity Finder — HTTP API + DynamoDB + S3/CloudFront
+
+Globals:
+  Function:
+    Runtime: python3.12
+    Timeout: 15
+    MemorySize: 256
+
+Resources:
+
+# ── DynamoDB Tables ───────────────────────────────────────────────────────────
+
+  CommunityCentersTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: community-centers-TorontoXP
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: community_center_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: community_center_id
+          KeyType: HASH
+      Tags:
+        - Key: Project
+          Value: TorontoSportsFinder
+
+  SportsSchedulesTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: sports-schedules-TorontoXP
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: sport
+          AttributeType: S
+        - AttributeName: schedule_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: sport
+          KeyType: HASH
+        - AttributeName: schedule_id
+          KeyType: RANGE
+      Tags:
+        - Key: Project
+          Value: TorontoSportsFinder
+
+# ── HTTP API (API Gateway v2) ────────────────────────────────────────────────
+
+  HttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      StageName: api
+      CorsConfiguration:
+        AllowOrigins:
+          - "*"
+        AllowMethods:
+          - GET
+          - OPTIONS
+        AllowHeaders:
+          - Content-Type
+
+# ── Lambda Functions ─────────────────────────────────────────────────────────
+
+  GetSportsFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: getSports-TorontoXP
+      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/lambdaDynamoDbRole"
+      CodeUri: lambdas/
+      Handler: getSports.handler
+      Events:
+        GetSports:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /sports
+            Method: GET
+
+  GetSportSchedulesFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: getSportSchedules-TorontoXP
+      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/lambdaDynamoDbRole"
+      CodeUri: lambdas/
+      Handler: getSportSchedules.handler
+      Events:
+        GetSchedules:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /sports/{sport}/schedules
+            Method: GET
+
+# ── Outputs ───────────────────────────────────────────────────────────────────
+Outputs:
+  HttpApiUrl:
+    Description: HTTP API base URL
+    Value: !Sub "https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/api"
+  CommunityCentersTableName:
+    Value: !Ref CommunityCentersTable
+  SportsSchedulesTableName:
+    Value: !Ref SportsSchedulesTable
