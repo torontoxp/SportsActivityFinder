@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { fetchSchedules } from "../services/api";
+import { trackTelemetryDeckEvent } from "../telemetry";
 import FilterBar from "../components/FilterBar";
 import ScheduleTable from "../components/ScheduleTable";
 import "./SportResultsPage.css";
@@ -58,6 +59,7 @@ export default function SportResultsPage() {
   useEffect(() => {
     setLoading(true);
     setFilters(DEFAULT_FILTERS);
+    trackTelemetryDeckEvent(`sport_visited:${sport}`);
     fetchSchedules(sport)
       .then(setSchedules)
       .finally(() => setLoading(false));

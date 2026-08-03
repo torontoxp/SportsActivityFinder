@@ -1,4 +1,5 @@
 import "./ScheduleTable.css";
+import { trackTelemetryDeckEvent, goatCounterEvent, simpleAnalyticsEvent } from "../telemetry";
 
 const DAY_ORDER = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
 const DAY_FULL = {
@@ -66,6 +67,11 @@ export default function ScheduleTable({ schedules }) {
                     rel="noopener noreferrer"
                     className="center-name-link"
                     title={`Visit ${row.name} website`}
+                    onClick={() => {
+                      trackTelemetryDeckEvent(`centre_website_clicked:${row.name}`);
+                      goatCounterEvent(`centre_website_clicked/${row.name}`, true);
+                      simpleAnalyticsEvent('centre_website_clicked', { centre: row.name });
+                    }}
                   >
                     {row.name}
                   </a>
@@ -128,6 +134,11 @@ export default function ScheduleTable({ schedules }) {
                       className="action-btn"
                       aria-label={`Open ${row.name} in Google Maps`}
                       title="Open in Google Maps"
+                      onClick={() => {
+                        trackTelemetryDeckEvent(`maps_clicked:${row.name}`);
+                        goatCounterEvent(`maps_clicked/${row.name}`, true);
+                        simpleAnalyticsEvent('maps_clicked', { centre: row.name });
+                      }}
                     >
                       <span className="action-btn-icon">📍</span>
                       <span className="action-btn-text">Maps</span>
@@ -138,6 +149,11 @@ export default function ScheduleTable({ schedules }) {
                         className="action-btn"
                         aria-label={`Call ${row.name} at ${row.phone}`}
                         title={`Call ${row.phone}`}
+                        onClick={() => {
+                          trackTelemetryDeckEvent(`call_clicked:${row.name}`);
+                          goatCounterEvent(`call_clicked/${row.name}`, true);
+                          simpleAnalyticsEvent('call_clicked', { centre: row.name });
+                        }}
                       >
                         <span className="action-btn-icon">📞</span>
                         <span className="action-btn-text">Call</span>

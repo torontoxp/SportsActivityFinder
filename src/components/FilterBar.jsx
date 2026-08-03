@@ -1,5 +1,6 @@
 import { useState, useMemo, useRef, useEffect } from "react";
 import "./FilterBar.css";
+import { trackTelemetryDeckEvent, goatCounterEvent, simpleAnalyticsEvent } from "../telemetry";
 
 const SORTED_DAYS = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
 const DAY_LABELS = { MON: "Mon", TUE: "Tue", WED: "Wed", THU: "Thu", FRI: "Fri", SAT: "Sat", SUN: "Sun" };
@@ -39,10 +40,16 @@ export default function FilterBar({ filters, onChange, resultCount, schedules = 
   }, []);
   const toggle = (key, value) => {
     const current = filters[key];
-    const next = current.includes(value)
-      ? current.filter((v) => v !== value)
-      : [...current, value];
+    const isAdding = !current.includes(value);
+    const next = isAdding
+      ? [...current, value]
+      : current.filter((v) => v !== value);
     onChange({ ...filters, [key]: next });
+
+    const action = isAdding ? 'filter_applied' : 'filter_removed';
+    trackTelemetryDeckEvent(`${action}:${key}:${value}`);
+    goatCounterEvent(`${action}/${key}/${value}`, true);
+    simpleAnalyticsEvent(action, { filterType: key, filterValue: value });
   };
 
   const clearAll = () => {

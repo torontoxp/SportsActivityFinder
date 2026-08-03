@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import SportResultsPage from "./pages/SportResultsPage";
+import { trackTelemetryDeckEvent, goatCounterEvent, simpleAnalyticsEvent } from "./telemetry";
 import "./App.css";
 
 export default function App() {
@@ -17,7 +18,13 @@ export default function App() {
           <p className="footer-text">
             Designed & developed by
             <span className="footer-logo-wrap">
-              <a href="https://crafesign.com" target="_blank" rel="noopener noreferrer" style={{ display: 'flex' }}>
+              <a href="https://crafesign.com" target="_blank" rel="noopener noreferrer" style={{ display: 'flex' }}
+                onClick={() => {
+                  trackTelemetryDeckEvent('footer_crafesign_clicked');
+                  goatCounterEvent('footer_crafesign_clicked', true);
+                  simpleAnalyticsEvent('footer_crafesign_clicked');
+                }}
+              >
                 <img
                   className="footer-logo"
                   alt="Crafesign logo"
