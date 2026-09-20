@@ -400,6 +400,6 @@
 
 @media (max-width: 440px) {
   .filter-bar-header {
-    gap: 10px;
+    gap: 9px;
   }
 }

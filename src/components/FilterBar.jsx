@@ -46,6 +46,25 @@ export default function FilterBar({
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  // Auto-collapse filter bar when scrolling down while expanded
+  useEffect(() => {
+    if (!isExpanded) return;
+
+    let lastScrollY = window.scrollY;
+
+    function handleScroll() {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY + 10) {
+        setIsExpanded(false);
+      } else if (currentScrollY < lastScrollY) {
+        lastScrollY = currentScrollY;
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isExpanded]);
   const toggle = (key, value) => {
     const current = filters[key];
     const isAdding = !current.includes(value);
