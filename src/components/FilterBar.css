@@ -17,7 +17,7 @@
 .filter-bar-header {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 11px;
 }
 
 .filter-label-main {
