@@ -12,7 +12,7 @@ export default defineConfig({
       injectRegister: 'auto',
       includeAssets: ['TorontoXP_logo.png', 'CrafesignLogo.svg', 'Pickleball.png', 'Squash.png', 'Bocce.png', 'Bowling.png', 'Netball.png', 'RollerHockey.png'],
       manifest: {
-        name: 'Toronto Life - Sports Activity Finder',
+        name: 'TorontoXP - Sports Activity Finder',
         short_name: 'TorontoXP',
         description: 'Find sports and activities at Toronto community centres. Search schedules, locations and age groups.',
         theme_color: '#165788',
