@@ -17,7 +17,7 @@
 .filter-bar-header {
   display: flex;
   align-items: center;
-  gap: 11px;
+  gap: 12px;
 }
 
 .filter-label-main {
@@ -395,5 +395,11 @@
     right: 0;
     min-width: 260px;
     max-width: calc(100vw - 40px);
+  }
+}
+
+@media (max-width: 440px) {
+  .filter-bar-header {
+    gap: 10px;
   }
 }
