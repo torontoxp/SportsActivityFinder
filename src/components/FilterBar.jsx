@@ -5,7 +5,15 @@ import { trackTelemetryDeckEvent, goatCounterEvent, simpleAnalyticsEvent } from 
 const SORTED_DAYS = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
 const DAY_LABELS = { MON: "Mon", TUE: "Tue", WED: "Wed", THU: "Thu", FRI: "Fri", SAT: "Sat", SUN: "Sun" };
 
-export default function FilterBar({ filters, onChange, resultCount, schedules = [] }) {
+export default function FilterBar({
+  filters,
+  onChange,
+  resultCount,
+  schedules = [],
+  isDistanceSortActive = false,
+  onToggleDistanceSort,
+  locationLoading = false,
+}) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const { availableDays, availableAges, availableTags, availableCentres } = useMemo(() => {
@@ -73,7 +81,7 @@ export default function FilterBar({ filters, onChange, resultCount, schedules = 
   return (
     <div className="filter-bar" role="search" aria-label="Filter schedules">
       <div className="filter-bar-inner container">
-        {/* Row 1: header + result count */}
+        {/* Row 1: header + sort + result count */}
         <div className="filter-bar-header" onClick={() => setIsExpanded(!isExpanded)} style={{ cursor: "pointer", userSelect: "none", marginBottom: isExpanded ? "12px" : "0" }}>
           <span className="filter-label-main" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
             Filters
@@ -81,6 +89,27 @@ export default function FilterBar({ filters, onChange, resultCount, schedules = 
               <path d="M6 9l6 6 6-6" />
             </svg>
           </span>
+
+          <button
+            type="button"
+            className={`filter-sort-btn ${isDistanceSortActive ? "active" : ""} ${locationLoading ? "loading" : ""}`}
+            onClick={(e) => {
+              e.stopPropagation();
+              onToggleDistanceSort && onToggleDistanceSort();
+            }}
+            aria-label="Sort by distance"
+            title="Sort community centres by distance from your location"
+          >
+            <span>📍</span>
+            <span>
+              {locationLoading
+                ? "Locating…"
+                : isDistanceSortActive
+                  ? "Closest"
+                  : "Sort"}
+            </span>
+          </button>
+
           <span className="filter-result-count">
             {resultCount} {resultCount === 1 ? "result" : "results"}
           </span>

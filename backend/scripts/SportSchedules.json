@@ -1,0 +1,8033 @@
+[
+  {
+    "schedule_id": "C7#TUE#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "10am-12:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C7"
+  },
+  {
+    "schedule_id": "C7#WED#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "8pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C7"
+  },
+  {
+    "schedule_id": "C7#FRI#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "10am-12:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C7"
+  },
+  {
+    "schedule_id": "C17#FRI#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "5:15pm-7:15pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C17"
+  },
+  {
+    "schedule_id": "C17#FRI#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7:30pm-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C17"
+  },
+  {
+    "schedule_id": "C17#SUN#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "9am-10:30am",
+      "10:30am-12pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C17"
+  },
+  {
+    "schedule_id": "C24#MON#13-17#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "8:15pm-9:30pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#MON#13-23#",
+    "sport": "Multi-Sport",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "12pm-1pm"
+    ],
+    "age_group": "13-23",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#MON#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#MON#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7:30am-8:45am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#MON#6-12#",
+    "sport": "Basketball",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "MON",
+    "slots": [
+      "4:15pm-5:30pm",
+      "6pm-7pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#MON#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "5:45pm-6:45pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#TUE#13-17#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "4:30pm-6:15pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#TUE#13-23#",
+    "sport": "Multi-Sport",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "12pm-1pm"
+    ],
+    "age_group": "13-23",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#TUE#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#TUE#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7:30am-8:45am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#TUE#5+#",
+    "sport": "Badminton",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "TUE",
+    "slots": [
+      "6pm-7pm"
+    ],
+    "age_group": "5+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#WED#13-17#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "8:15pm-9:30pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#WED#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "7pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#WED#6-12#",
+    "sport": "Basketball",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "WED",
+    "slots": [
+      "4:15pm-5:30pm",
+      "6pm-7pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#WED#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "1:15pm-3:15pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#THU#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "7pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#THU#5+#",
+    "sport": "Badminton",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "THU",
+    "slots": [
+      "6pm-7pm"
+    ],
+    "age_group": "5+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#THU#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "11:45am-1:15pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#FRI#19+#",
+    "sport": "Multi-Sport",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "6:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#FRI#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7:30am-8:45am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#FRI#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "1:15pm-3:15pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#FRI#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "3:30pm-6:15pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#SAT#13-17#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "11:45am-1:15pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#SAT#13-23#",
+    "sport": "Multi-Sport",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "4:30pm-7:30pm"
+    ],
+    "age_group": "13-23",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#SAT#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "1:15pm-4:15pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#SAT#5+#",
+    "sport": "Multi-Sport",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "1:30pm-4:30pm"
+    ],
+    "age_group": "5+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#SAT#6+#",
+    "sport": "Pickleball",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "12:15pm-1:15pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#SAT#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "10:30am-11:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#SUN#13-23#",
+    "sport": "Multi-Sport",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "4:30pm-7:30pm"
+    ],
+    "age_group": "13-23",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#SUN#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "11:15am-1:15pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#SUN#5+#",
+    "sport": "Multi-Sport",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "1:30pm-4:30pm"
+    ],
+    "age_group": "5+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C24#SUN#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "9am-9:45am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C24"
+  },
+  {
+    "schedule_id": "C30#MON#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "1pm-3:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C30"
+  },
+  {
+    "schedule_id": "C30#WED#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "1pm-3:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C30"
+  },
+  {
+    "schedule_id": "C42#MON#16+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "11:30am-1pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C42"
+  },
+  {
+    "schedule_id": "C42#MON#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "6:30pm-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C42"
+  },
+  {
+    "schedule_id": "C42#TUE#13-18#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "6:30pm-7:45pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C42"
+  },
+  {
+    "schedule_id": "C42#TUE#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "8pm-9:15pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C42"
+  },
+  {
+    "schedule_id": "C42#TUE#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "11:30am-1pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C42"
+  },
+  {
+    "schedule_id": "C42#WED#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "6:30pm-9pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C42"
+  },
+  {
+    "schedule_id": "C42#WED#16+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "11:30am-1pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C42"
+  },
+  {
+    "schedule_id": "C42#THU#13-18#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "6:30pm-7:45pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C42"
+  },
+  {
+    "schedule_id": "C42#THU#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "8pm-9:15pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C42"
+  },
+  {
+    "schedule_id": "C42#THU#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "11:30am-1pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C42"
+  },
+  {
+    "schedule_id": "C42#FRI#16-59#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "11:30am-2pm",
+      "6:30pm-9:15pm"
+    ],
+    "age_group": "16-59",
+    "community_center_id": "C42"
+  },
+  {
+    "schedule_id": "C42#FRI#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "9am-11am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C42"
+  },
+  {
+    "schedule_id": "C42#SAT#13-18#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "6pm-7:45pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C42"
+  },
+  {
+    "schedule_id": "C42#SAT#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "8pm-9:15pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C42"
+  },
+  {
+    "schedule_id": "C42#SAT#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "4pm-5:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C42"
+  },
+  {
+    "schedule_id": "C52#MON#13-24#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "6pm-7:30pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C52"
+  },
+  {
+    "schedule_id": "C52#MON#13-24#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7:30pm-8:30pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C52"
+  },
+  {
+    "schedule_id": "C52#MON#6+#",
+    "sport": "Open Gym",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "MON",
+    "slots": [
+      "3:30pm-5pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C52"
+  },
+  {
+    "schedule_id": "C52#TUE#13-59#",
+    "sport": "Open Gym",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "TUE",
+    "slots": [
+      "4:30pm-5:30pm"
+    ],
+    "age_group": "13-59",
+    "community_center_id": "C52"
+  },
+  {
+    "schedule_id": "C52#TUE#6-24#",
+    "sport": "Multi-Sport",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "TUE",
+    "slots": [
+      "3:30pm-4:30pm"
+    ],
+    "age_group": "6-24",
+    "community_center_id": "C52"
+  },
+  {
+    "schedule_id": "C52#WED#6+#",
+    "sport": "Open Gym",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "WED",
+    "slots": [
+      "3:30pm-5pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C52"
+  },
+  {
+    "schedule_id": "C52#THU#13-24#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "6pm-7:30pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C52"
+  },
+  {
+    "schedule_id": "C52#THU#6+#",
+    "sport": "Badminton",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "THU",
+    "slots": [
+      "5pm-6pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C52"
+  },
+  {
+    "schedule_id": "C52#FRI#13-24#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "6:30pm-8:30pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C52"
+  },
+  {
+    "schedule_id": "C52#FRI#6+#",
+    "sport": "Open Gym",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "FRI",
+    "slots": [
+      "3:30pm-4:30pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C52"
+  },
+  {
+    "schedule_id": "C63#MON#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "8pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C63"
+  },
+  {
+    "schedule_id": "C63#MON#19+#",
+    "sport": "Ball Hockey",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "6:30pm-7:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C63"
+  },
+  {
+    "schedule_id": "C63#MON#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "9:30am-11:30am",
+      "11:45am-1:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C63"
+  },
+  {
+    "schedule_id": "C63#TUE#19+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C63"
+  },
+  {
+    "schedule_id": "C63#WED#19+#",
+    "sport": "Basketball",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "WED",
+    "slots": [
+      "1pm-2:30pm",
+      "6:15pm-9:15pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C63"
+  },
+  {
+    "schedule_id": "C63#THU#13-24#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "4pm-6pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C63"
+  },
+  {
+    "schedule_id": "C63#THU#19+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "6:30pm-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C63"
+  },
+  {
+    "schedule_id": "C63#FRI#13-24#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "5:30pm-7:30pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C63"
+  },
+  {
+    "schedule_id": "C63#FRI#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C63"
+  },
+  {
+    "schedule_id": "C63#FRI#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "9:15am-11:15am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C63"
+  },
+  {
+    "schedule_id": "C63#SAT#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "1:15pm-4:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C63"
+  },
+  {
+    "schedule_id": "C63#SUN#0+#",
+    "sport": "Multi-Sport",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "12pm-2pm"
+    ],
+    "age_group": "0+",
+    "community_center_id": "C63"
+  },
+  {
+    "schedule_id": "C63#SUN#19-59#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "2pm-4pm"
+    ],
+    "age_group": "19-59",
+    "community_center_id": "C63"
+  },
+  {
+    "schedule_id": "C89#MON#13+#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "12:30pm-2pm",
+      "6:30pm-8:30pm"
+    ],
+    "age_group": "13+",
+    "community_center_id": "C89"
+  },
+  {
+    "schedule_id": "C89#TUE#13+#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "11:45am-12:45pm"
+    ],
+    "age_group": "13+",
+    "community_center_id": "C89"
+  },
+  {
+    "schedule_id": "C89#WED#13+#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "12:30pm-2pm"
+    ],
+    "age_group": "13+",
+    "community_center_id": "C89"
+  },
+  {
+    "schedule_id": "C89#WED#13-24#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "6:30pm-8:30pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C89"
+  },
+  {
+    "schedule_id": "C89#THU#13+#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "11:45am-2pm"
+    ],
+    "age_group": "13+",
+    "community_center_id": "C89"
+  },
+  {
+    "schedule_id": "C89#THU#13-24#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "6:30pm-8:30pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C89"
+  },
+  {
+    "schedule_id": "C89#FRI#13+#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "12:30pm-2pm"
+    ],
+    "age_group": "13+",
+    "community_center_id": "C89"
+  },
+  {
+    "schedule_id": "C89#SUN#13-24#",
+    "sport": "Ball Hockey",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "1:45pm-3:30pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C89"
+  },
+  {
+    "schedule_id": "C89#SUN#13-24#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "3:30pm-5:15pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C89"
+  },
+  {
+    "schedule_id": "C171#MON#0+#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "11:45am-2pm",
+      "2:30pm-3:30pm"
+    ],
+    "age_group": "0+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#MON#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#MON#6+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "9am-8pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#TUE#13-15#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "4pm-7pm"
+    ],
+    "age_group": "13-15",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#TUE#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#TUE#6+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "9am-8pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#TUE#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "12pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#WED#0+#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "9am-12pm"
+    ],
+    "age_group": "0+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#WED#13-15#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "4pm-5:30pm"
+    ],
+    "age_group": "13-15",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#WED#16-17#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "5:30pm-7pm"
+    ],
+    "age_group": "16-17",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#WED#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#WED#6+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "9am-8pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#WED#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#THU#0+#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "11:45am-12:30pm"
+    ],
+    "age_group": "0+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#THU#6+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "9am-8pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#THU#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#FRI#16-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "4pm-7pm"
+    ],
+    "age_group": "16-18",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#FRI#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#FRI#6+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "9am-8pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#FRI#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "12pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#SAT#6+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "9am-8pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C171#SUN#6+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "9am-8pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C171"
+  },
+  {
+    "schedule_id": "C189#WED#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "6:15pm-7:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C189"
+  },
+  {
+    "schedule_id": "C189#THU#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "6:15pm-7:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C189"
+  },
+  {
+    "schedule_id": "C189#SAT#13-18#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "10:30am-12pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C189"
+  },
+  {
+    "schedule_id": "C189#SAT#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "5pm-6:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C189"
+  },
+  {
+    "schedule_id": "C189#SAT#6+#",
+    "sport": "Multi-Sport",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "2:45pm-3:45pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C189"
+  },
+  {
+    "schedule_id": "C189#SUN#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "2:15pm-3:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C189"
+  },
+  {
+    "schedule_id": "C189#SUN#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "4pm-5:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C189"
+  },
+  {
+    "schedule_id": "C189#SUN#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "9:30am-12:15pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C189"
+  },
+  {
+    "schedule_id": "C243#MON#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "6:15pm-8:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C243"
+  },
+  {
+    "schedule_id": "C243#THU#19-59#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "7pm-8:30pm"
+    ],
+    "age_group": "19-59",
+    "community_center_id": "C243"
+  },
+  {
+    "schedule_id": "C243#THU#6-12#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "4pm-6pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C243"
+  },
+  {
+    "schedule_id": "C243#FRI#19+#",
+    "sport": "Soccer",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "FRI",
+    "slots": [
+      "6pm-8:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C243"
+  },
+  {
+    "schedule_id": "C243#SAT#19+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "12:30pm-2:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C243"
+  },
+  {
+    "schedule_id": "C243#SAT#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "10:30am-12:15pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C243"
+  },
+  {
+    "schedule_id": "C243#SUN#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "2pm-4pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C243"
+  },
+  {
+    "schedule_id": "C243#SUN#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "10am-12pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C243"
+  },
+  {
+    "schedule_id": "C243#SUN#19-24#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "12pm-2pm"
+    ],
+    "age_group": "19-24",
+    "community_center_id": "C243"
+  },
+  {
+    "schedule_id": "C267#MON#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "10am-2pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C267"
+  },
+  {
+    "schedule_id": "C267#WED#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "10am-2pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C267"
+  },
+  {
+    "schedule_id": "C267#FRI#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "10am-2pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C267"
+  },
+  {
+    "schedule_id": "C272#MON#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "3:45pm-6pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#MON#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "6:45pm-8:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#MON#7+#",
+    "sport": "Squash",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7am-8pm"
+    ],
+    "age_group": "7+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#TUE#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "3:45pm-6pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#TUE#19+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "6:30pm-8:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#TUE#7+#",
+    "sport": "Squash",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7am-8pm"
+    ],
+    "age_group": "7+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#WED#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "6:30pm-8:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#WED#7+#",
+    "sport": "Squash",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "7am-8pm"
+    ],
+    "age_group": "7+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#THU#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "3:45pm-6pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#THU#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "6:30pm-8:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#THU#7+#",
+    "sport": "Squash",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "7am-8pm"
+    ],
+    "age_group": "7+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#FRI#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "3:45pm-6:45pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#FRI#19+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7pm-8:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#FRI#7+#",
+    "sport": "Squash",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7am-8pm"
+    ],
+    "age_group": "7+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#SAT#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "11am-2pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#SAT#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "4:45pm-7:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#SAT#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "2:30pm-4:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#SAT#7+#",
+    "sport": "Squash",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "9am-6:40pm"
+    ],
+    "age_group": "7+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#SUN#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "4pm-7pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#SUN#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "12:30pm-3:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#SUN#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "10am-12pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C272#SUN#7+#",
+    "sport": "Squash",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "9am-6:40pm"
+    ],
+    "age_group": "7+",
+    "community_center_id": "C272"
+  },
+  {
+    "schedule_id": "C282#MON#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "8:15pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C282"
+  },
+  {
+    "schedule_id": "C282#MON#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "6:15pm-8pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C282"
+  },
+  {
+    "schedule_id": "C282#TUE#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C282"
+  },
+  {
+    "schedule_id": "C282#THU#13-15#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "6:45pm-7:30pm"
+    ],
+    "age_group": "13-15",
+    "community_center_id": "C282"
+  },
+  {
+    "schedule_id": "C282#THU#6-11#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "6pm-6:45pm"
+    ],
+    "age_group": "6-11",
+    "community_center_id": "C282"
+  },
+  {
+    "schedule_id": "C282#FRI#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "8:15pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C282"
+  },
+  {
+    "schedule_id": "C282#FRI#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "6:15pm-8pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C282"
+  },
+  {
+    "schedule_id": "C282#SAT#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "12pm-2pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C282"
+  },
+  {
+    "schedule_id": "C282#SAT#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "2:45pm-4:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C282"
+  },
+  {
+    "schedule_id": "C287#MON#6-17#",
+    "sport": "Table Tennis",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "MON",
+    "slots": [
+      "4pm-5:30pm"
+    ],
+    "age_group": "6-17",
+    "community_center_id": "C287"
+  },
+  {
+    "schedule_id": "C287#TUE#6-17#",
+    "sport": "Table Tennis",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "TUE",
+    "slots": [
+      "4pm-5:30pm"
+    ],
+    "age_group": "6-17",
+    "community_center_id": "C287"
+  },
+  {
+    "schedule_id": "C287#WED#6-17#",
+    "sport": "Table Tennis",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "WED",
+    "slots": [
+      "4pm-5:30pm"
+    ],
+    "age_group": "6-17",
+    "community_center_id": "C287"
+  },
+  {
+    "schedule_id": "C287#THU#6-17#",
+    "sport": "Table Tennis",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "THU",
+    "slots": [
+      "4pm-5:30pm"
+    ],
+    "age_group": "6-17",
+    "community_center_id": "C287"
+  },
+  {
+    "schedule_id": "C287#FRI#6-17#",
+    "sport": "Table Tennis",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "FRI",
+    "slots": [
+      "4pm-5:30pm"
+    ],
+    "age_group": "6-17",
+    "community_center_id": "C287"
+  },
+  {
+    "schedule_id": "C287#SAT#6-17#",
+    "sport": "Table Tennis",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "9am-1pm"
+    ],
+    "age_group": "6-17",
+    "community_center_id": "C287"
+  },
+  {
+    "schedule_id": "C287#SUN#6-17#",
+    "sport": "Table Tennis",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "9am-1pm"
+    ],
+    "age_group": "6-17",
+    "community_center_id": "C287"
+  },
+  {
+    "schedule_id": "C289#MON#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "9:15am-3:15pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C289"
+  },
+  {
+    "schedule_id": "C289#WED#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "9:15am-12:15pm",
+      "2:15pm-3:45pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C289"
+  },
+  {
+    "schedule_id": "C289#FRI#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "9:15am-12:15pm",
+      "2:15pm-3:45pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C289"
+  },
+  {
+    "schedule_id": "C329#MON#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "12:15pm-1:45pm",
+      "1:45pm-3:15pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C329"
+  },
+  {
+    "schedule_id": "C329#TUE#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "1pm-2:30pm",
+      "2:30pm-4pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C329"
+  },
+  {
+    "schedule_id": "C329#THU#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "1pm-2:30pm",
+      "2:30pm-4pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C329"
+  },
+  {
+    "schedule_id": "C329#FRI#13-18#",
+    "sport": "Multi-Sport",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "8pm-9:30pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C329"
+  },
+  {
+    "schedule_id": "C329#SUN#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "5:30pm-7:30pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C329"
+  },
+  {
+    "schedule_id": "C329#SUN#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C329"
+  },
+  {
+    "schedule_id": "C329#SUN#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "10:45am-12:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C329"
+  },
+  {
+    "schedule_id": "C354#MON#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C354"
+  },
+  {
+    "schedule_id": "C354#MON#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "9am-12pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C354"
+  },
+  {
+    "schedule_id": "C354#TUE#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C354"
+  },
+  {
+    "schedule_id": "C354#TUE#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "9am-12pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C354"
+  },
+  {
+    "schedule_id": "C354#TUE#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C354"
+  },
+  {
+    "schedule_id": "C354#WED#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C354"
+  },
+  {
+    "schedule_id": "C354#WED#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "9am-12pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C354"
+  },
+  {
+    "schedule_id": "C354#THU#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C354"
+  },
+  {
+    "schedule_id": "C354#THU#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "9am-12pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C354"
+  },
+  {
+    "schedule_id": "C354#FRI#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C354"
+  },
+  {
+    "schedule_id": "C354#FRI#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "9am-12pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C354"
+  },
+  {
+    "schedule_id": "C354#FRI#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C354"
+  },
+  {
+    "schedule_id": "C354#SAT#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "5pm-7:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C354"
+  },
+  {
+    "schedule_id": "C354#SUN#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "6pm-8pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C354"
+  },
+  {
+    "schedule_id": "C451#MON#13-23#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "3pm-6pm"
+    ],
+    "age_group": "13-23",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#MON#13-24#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "11:30am-2:30pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#MON#16+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#MON#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "9am-2pm",
+      "7pm-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#MON#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "9am-11am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#TUE#13-23#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "3pm-6pm"
+    ],
+    "age_group": "13-23",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#TUE#13-24#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "11:30am-2:30pm",
+      "3pm-5pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#TUE#13-24#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "5pm-7pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#TUE#16+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7pm-9:30pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#TUE#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "9am-2pm",
+      "7pm-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#WED#13-23#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "3pm-6pm"
+    ],
+    "age_group": "13-23",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#WED#13-24#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "11:30am-12:30pm",
+      "3pm-5pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#WED#16+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#WED#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "9am-2pm",
+      "7pm-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#WED#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "9am-11am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#THU#13-23#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "3pm-6pm"
+    ],
+    "age_group": "13-23",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#THU#13-24#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "11:30am-12:30pm",
+      "3pm-5pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#THU#13-24#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "5pm-7pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#THU#16+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "7pm-9:30pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#THU#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "9am-2pm",
+      "7pm-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#THU#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#FRI#13-23#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "3pm-6pm"
+    ],
+    "age_group": "13-23",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#FRI#13-24#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "6pm-7:30pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#FRI#13-24#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "10am-2:30pm",
+      "3pm-5pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#FRI#13-24#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7:30pm-9pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#FRI#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "8am-10am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#FRI#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "9am-2pm",
+      "7pm-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#SAT#13+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "9am-9pm"
+    ],
+    "age_group": "13+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#SAT#13-24#",
+    "sport": "Basketball",
+    "tags": [
+      "Parasport: Wheelchair"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "5pm-6pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#SAT#16+#",
+    "sport": "Basketball",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "2:45pm-4:45pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#SUN#13+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "9am-7pm"
+    ],
+    "age_group": "13+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#SUN#13-24#",
+    "sport": "Ball Hockey",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "10am-12pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#SUN#16+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "3pm-5pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#SUN#16+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "12:15pm-2:30pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C451#SUN#16+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "5:15pm-7:15pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C451"
+  },
+  {
+    "schedule_id": "C474#MON#13-24#",
+    "sport": "Multi-Sport",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "3:30pm-6pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C474"
+  },
+  {
+    "schedule_id": "C474#MON#13-24#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "6pm-8pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C474"
+  },
+  {
+    "schedule_id": "C474#MON#18-24#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "1pm-3:30pm"
+    ],
+    "age_group": "18-24",
+    "community_center_id": "C474"
+  },
+  {
+    "schedule_id": "C474#TUE#13-24#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "6pm-8pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C474"
+  },
+  {
+    "schedule_id": "C474#TUE#18-24#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "1pm-3:30pm"
+    ],
+    "age_group": "18-24",
+    "community_center_id": "C474"
+  },
+  {
+    "schedule_id": "C474#WED#13-24#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "6pm-8pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C474"
+  },
+  {
+    "schedule_id": "C474#WED#13-24#",
+    "sport": "Multi-Sport",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "3:30pm-6pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C474"
+  },
+  {
+    "schedule_id": "C474#WED#18-24#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "1pm-3:30pm"
+    ],
+    "age_group": "18-24",
+    "community_center_id": "C474"
+  },
+  {
+    "schedule_id": "C474#THU#13-24#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "6pm-8pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C474"
+  },
+  {
+    "schedule_id": "C474#THU#18-24#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "1pm-3:30pm"
+    ],
+    "age_group": "18-24",
+    "community_center_id": "C474"
+  },
+  {
+    "schedule_id": "C474#FRI#13-24#",
+    "sport": "Multi-Sport",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "3:30pm-6pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C474"
+  },
+  {
+    "schedule_id": "C474#FRI#13-24#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "6pm-8pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C474"
+  },
+  {
+    "schedule_id": "C474#FRI#18-24#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "1pm-3:30pm"
+    ],
+    "age_group": "18-24",
+    "community_center_id": "C474"
+  },
+  {
+    "schedule_id": "C487#MON#6-12#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "3pm-5pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C487"
+  },
+  {
+    "schedule_id": "C487#MON#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "8:30am-10:45am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C487"
+  },
+  {
+    "schedule_id": "C487#TUE#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7pm-10pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C487"
+  },
+  {
+    "schedule_id": "C487#TUE#6-12#",
+    "sport": "Multi-Sport",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "3pm-5pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C487"
+  },
+  {
+    "schedule_id": "C487#WED#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "8:30am-10:45am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C487"
+  },
+  {
+    "schedule_id": "C487#WED#6-12#",
+    "sport": "Multi-Sport",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "3pm-5pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C487"
+  },
+  {
+    "schedule_id": "C487#THU#6-12#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "3pm-5pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C487"
+  },
+  {
+    "schedule_id": "C487#FRI#13-15#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "5pm-6:30pm"
+    ],
+    "age_group": "13-15",
+    "community_center_id": "C487"
+  },
+  {
+    "schedule_id": "C487#FRI#16-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "6:30pm-8pm"
+    ],
+    "age_group": "16-18",
+    "community_center_id": "C487"
+  },
+  {
+    "schedule_id": "C487#FRI#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "8pm-10pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C487"
+  },
+  {
+    "schedule_id": "C487#FRI#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "8:30am-10:45am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C487"
+  },
+  {
+    "schedule_id": "C487#FRI#6-12#",
+    "sport": "Multi-Sport",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "3pm-5pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C487"
+  },
+  {
+    "schedule_id": "C499#MON#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7pm-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C499"
+  },
+  {
+    "schedule_id": "C499#TUE#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7pm-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C499"
+  },
+  {
+    "schedule_id": "C499#TUE#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "10:30am-12pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C499"
+  },
+  {
+    "schedule_id": "C499#THU#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "12pm-1:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C499"
+  },
+  {
+    "schedule_id": "C499#SAT#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "6pm-8pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C499"
+  },
+  {
+    "schedule_id": "C499#SUN#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "6pm-8pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C499"
+  },
+  {
+    "schedule_id": "C507#MON#1-11#",
+    "sport": "Open Gym",
+    "tags": [
+      "Caregiver"
+    ],
+    "day_of_week": "MON",
+    "slots": [
+      "10:15am-12pm"
+    ],
+    "age_group": "1-11",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#MON#13-15#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "4:15pm-5:45pm"
+    ],
+    "age_group": "13-15",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#MON#16-17#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "2:45pm-4:15pm"
+    ],
+    "age_group": "16-17",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#MON#18+#",
+    "sport": "Ball Hockey",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#MON#6-12#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "6pm-7pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#MON#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "8am-10am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#TUE#1-11#",
+    "sport": "Open Gym",
+    "tags": [
+      "Caregiver"
+    ],
+    "day_of_week": "TUE",
+    "slots": [
+      "10:30am-12pm"
+    ],
+    "age_group": "1-11",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#TUE#13-17#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "3pm-4:30pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#TUE#18+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#TUE#2-5#",
+    "sport": "Soccer",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "TUE",
+    "slots": [
+      "4:30pm-5:30pm"
+    ],
+    "age_group": "2-5",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#TUE#6-12#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "5:30pm-7pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#TUE#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "8am-10am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#TUE#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "12:30pm-2:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#TUE#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "8am-10am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#WED#13-17#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "3pm-4:45pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#WED#18+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "12:45pm-2:45pm",
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#WED#18+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "10:15am-12:15pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#WED#18+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "12:45pm-2:45pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#WED#6-12#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "5pm-7pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#WED#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "8am-10am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#THU#13-15#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "3:15pm-5pm"
+    ],
+    "age_group": "13-15",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#THU#16-17#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "3:15pm-5pm"
+    ],
+    "age_group": "16-17",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#THU#18+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#THU#6-12#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "5:15pm-7:15pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#THU#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "10:30am-12:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#THU#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "8am-10am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#THU#60+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#FRI#13-15#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "3:15pm-5:15pm"
+    ],
+    "age_group": "13-15",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#FRI#16-17#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "3:15pm-5:15pm"
+    ],
+    "age_group": "16-17",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#FRI#18+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7pm-9pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#FRI#18+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "10:15am-12:15pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#FRI#6-12#",
+    "sport": "Badminton",
+    "tags": [
+      "Caregiver"
+    ],
+    "day_of_week": "FRI",
+    "slots": [
+      "5:30pm-6:45pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#FRI#60+#",
+    "sport": "Archery",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "12:45pm-2:45pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#FRI#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "12:45pm-2:45pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#FRI#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "8am-10am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#SAT#18+#",
+    "sport": "Ball Hockey",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "5:45pm-7:45pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#SAT#4-4#",
+    "sport": "Basketball",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "12:45pm-2pm"
+    ],
+    "age_group": "4-4",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#SAT#6-8#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "2:15pm-3:45pm"
+    ],
+    "age_group": "6-8",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#SAT#6-8#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "10am-11am"
+    ],
+    "age_group": "6-8",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#SAT#9-12#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "4pm-5pm"
+    ],
+    "age_group": "9-12",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#SAT#9-12#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "11:15am-12:30pm"
+    ],
+    "age_group": "9-12",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#SUN#1-11#",
+    "sport": "Open Gym",
+    "tags": [
+      "Caregiver"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "8am-9:45am"
+    ],
+    "age_group": "1-11",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#SUN#18+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "10am-12pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#SUN#18+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "12:30pm-2:30pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C507#SUN#9-12#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "3:45pm-5pm"
+    ],
+    "age_group": "9-12",
+    "community_center_id": "C507"
+  },
+  {
+    "schedule_id": "C575#MON#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "8:30pm-10pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C575"
+  },
+  {
+    "schedule_id": "C575#TUE#13-17#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "3:30pm-4:45pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C575"
+  },
+  {
+    "schedule_id": "C575#TUE#13-24#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "5pm-7pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C575"
+  },
+  {
+    "schedule_id": "C575#TUE#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7:15pm-9:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C575"
+  },
+  {
+    "schedule_id": "C575#TUE#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C575"
+  },
+  {
+    "schedule_id": "C575#WED#17+#",
+    "sport": "Ball Hockey",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "7:30pm-9:45pm"
+    ],
+    "age_group": "17+",
+    "community_center_id": "C575"
+  },
+  {
+    "schedule_id": "C575#THU#17+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "7pm-8:30pm"
+    ],
+    "age_group": "17+",
+    "community_center_id": "C575"
+  },
+  {
+    "schedule_id": "C575#THU#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C575"
+  },
+  {
+    "schedule_id": "C575#THU#19+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "8:30pm-10pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C575"
+  },
+  {
+    "schedule_id": "C575#FRI#17-24#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7:30pm-8:30pm"
+    ],
+    "age_group": "17-24",
+    "community_center_id": "C575"
+  },
+  {
+    "schedule_id": "C575#FRI#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "8:30pm-9:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C575"
+  },
+  {
+    "schedule_id": "C575#SAT#17+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "2:30pm-4:30pm"
+    ],
+    "age_group": "17+",
+    "community_center_id": "C575"
+  },
+  {
+    "schedule_id": "C575#SAT#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "12pm-2pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C575"
+  },
+  {
+    "schedule_id": "C575#SUN#17+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "2:30pm-6:30pm"
+    ],
+    "age_group": "17+",
+    "community_center_id": "C575"
+  },
+  {
+    "schedule_id": "C575#SUN#19+#",
+    "sport": "Ball Hockey",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "9am-12pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C575"
+  },
+  {
+    "schedule_id": "C617#MON#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "9am-11:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C617"
+  },
+  {
+    "schedule_id": "C617#TUE#13-18#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "6:30pm-8:30pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C617"
+  },
+  {
+    "schedule_id": "C617#TUE#13-18#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "6:30pm-8:30pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C617"
+  },
+  {
+    "schedule_id": "C617#TUE#13-18#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "6:30pm-8:30pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C617"
+  },
+  {
+    "schedule_id": "C617#TUE#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "12:30pm-3:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C617"
+  },
+  {
+    "schedule_id": "C617#WED#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "1:15pm-4:15pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C617"
+  },
+  {
+    "schedule_id": "C617#THU#13-16#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "3:15pm-5:15pm"
+    ],
+    "age_group": "13-16",
+    "community_center_id": "C617"
+  },
+  {
+    "schedule_id": "C617#THU#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "12:30pm-3pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C617"
+  },
+  {
+    "schedule_id": "C617#THU#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "8:45am-11:45am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C617"
+  },
+  {
+    "schedule_id": "C617#THU#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "1pm-3:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C617"
+  },
+  {
+    "schedule_id": "C617#FRI#13-16#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "3:30pm-5:30pm"
+    ],
+    "age_group": "13-16",
+    "community_center_id": "C617"
+  },
+  {
+    "schedule_id": "C617#FRI#16-19#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "5:30pm-7pm"
+    ],
+    "age_group": "16-19",
+    "community_center_id": "C617"
+  },
+  {
+    "schedule_id": "C617#FRI#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "8:30am-10:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C617"
+  },
+  {
+    "schedule_id": "C633#MON#13-17#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "4pm-6:30pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C633#MON#19-98#",
+    "sport": "Basketball",
+    "tags": [
+      "Adult"
+    ],
+    "day_of_week": "MON",
+    "slots": [
+      "6:30pm-8:30pm"
+    ],
+    "age_group": "19-98",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C633#MON#19-98#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "1:30pm-3:30pm"
+    ],
+    "age_group": "19-98",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C633#MON#60-98#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "11:25am-1:25pm"
+    ],
+    "age_group": "60-98",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C633#TUE#18-58#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "12pm-3:30pm"
+    ],
+    "age_group": "18-58",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C633#TUE#60-99#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "9:30am-11am"
+    ],
+    "age_group": "60-99",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C633#WED#13-17#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "4pm-6:30pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C633#WED#19-98#",
+    "sport": "Basketball",
+    "tags": [
+      "Adult"
+    ],
+    "day_of_week": "WED",
+    "slots": [
+      "6:30pm-8:30pm"
+    ],
+    "age_group": "19-98",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C633#WED#19-98#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "1:30pm-3:30pm"
+    ],
+    "age_group": "19-98",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C633#WED#60-98#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "11:25am-1:25pm"
+    ],
+    "age_group": "60-98",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C633#THU#18-58#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "12pm-3:30pm"
+    ],
+    "age_group": "18-58",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C633#THU#60-99#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "9:30am-11am"
+    ],
+    "age_group": "60-99",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C633#FRI#13-15#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "4:30pm-6:30pm"
+    ],
+    "age_group": "13-15",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C633#FRI#16-23#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "6:30pm-8:45pm"
+    ],
+    "age_group": "16-23",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C633#FRI#19-98#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "1:30pm-3:30pm"
+    ],
+    "age_group": "19-98",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C633#FRI#60-98#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "11:25am-1:25pm"
+    ],
+    "age_group": "60-98",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C633#SUN#18-58#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "12pm-5pm"
+    ],
+    "age_group": "18-58",
+    "community_center_id": "C633"
+  },
+  {
+    "schedule_id": "C642#MON#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "12pm-4:30pm",
+      "6:30pm-10pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C642"
+  },
+  {
+    "schedule_id": "C642#TUE#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "12pm-4:30pm",
+      "6:30pm-10pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C642"
+  },
+  {
+    "schedule_id": "C642#WED#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "12pm-4:30pm",
+      "6:30pm-10pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C642"
+  },
+  {
+    "schedule_id": "C642#THU#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "12pm-4:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C642"
+  },
+  {
+    "schedule_id": "C642#FRI#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "12pm-4:30pm",
+      "6:30pm-10pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C642"
+  },
+  {
+    "schedule_id": "C642#SAT#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "12pm-4:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C642"
+  },
+  {
+    "schedule_id": "C642#SUN#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "12pm-4:30pm",
+      "6:30pm-10pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C642"
+  },
+  {
+    "schedule_id": "C643#MON#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "9:30am-11:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C643"
+  },
+  {
+    "schedule_id": "C643#MON#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C643"
+  },
+  {
+    "schedule_id": "C643#TUE#13-18#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "4pm-6pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C643"
+  },
+  {
+    "schedule_id": "C643#TUE#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "1:30pm-3:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C643"
+  },
+  {
+    "schedule_id": "C643#WED#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "8pm-9pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C643"
+  },
+  {
+    "schedule_id": "C643#WED#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "1:30pm-3:30pm",
+      "4pm-6pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C643"
+  },
+  {
+    "schedule_id": "C643#THU#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "9:30am-11:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C643"
+  },
+  {
+    "schedule_id": "C643#THU#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "1:30pm-3:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C643"
+  },
+  {
+    "schedule_id": "C643#FRI#13-18#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "4pm-6pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C643"
+  },
+  {
+    "schedule_id": "C643#FRI#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "1:45pm-3:45pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C643"
+  },
+  {
+    "schedule_id": "C643#SAT#6+#",
+    "sport": "Table Tennis",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "1:30pm-3:30pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C643"
+  },
+  {
+    "schedule_id": "C647#MON#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "10am-4pm",
+      "5:30pm-9pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C647"
+  },
+  {
+    "schedule_id": "C647#TUE#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "10am-4pm",
+      "5:30pm-9pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C647"
+  },
+  {
+    "schedule_id": "C647#WED#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "10am-4pm",
+      "5:30pm-9pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C647"
+  },
+  {
+    "schedule_id": "C647#THU#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "10am-4pm",
+      "5:30pm-9pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C647"
+  },
+  {
+    "schedule_id": "C647#FRI#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "10am-4pm",
+      "5:30pm-9pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C647"
+  },
+  {
+    "schedule_id": "C647#SAT#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "10am-4pm",
+      "5:30pm-9pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C647"
+  },
+  {
+    "schedule_id": "C647#SUN#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "10am-4pm",
+      "5:30pm-9pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C647"
+  },
+  {
+    "schedule_id": "C675#MON#13-24#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7pm-10pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C675"
+  },
+  {
+    "schedule_id": "C675#TUE#13-24#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7pm-10pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C675"
+  },
+  {
+    "schedule_id": "C675#TUE#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "11am-12:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C675"
+  },
+  {
+    "schedule_id": "C675#WED#13-24#",
+    "sport": "Basketball",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "WED",
+    "slots": [
+      "6pm-9pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C675"
+  },
+  {
+    "schedule_id": "C675#WED#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "12pm-2pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C675"
+  },
+  {
+    "schedule_id": "C675#THU#16+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "7pm-10pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C675"
+  },
+  {
+    "schedule_id": "C675#FRI#13+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "6:30pm-8:30pm"
+    ],
+    "age_group": "13+",
+    "community_center_id": "C675"
+  },
+  {
+    "schedule_id": "C675#FRI#16+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7pm-10pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C675"
+  },
+  {
+    "schedule_id": "C675#FRI#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "12:30pm-2:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C675"
+  },
+  {
+    "schedule_id": "C693#MON#13-19#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "3:30pm-5pm"
+    ],
+    "age_group": "13-19",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#MON#13-19#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "5:15pm-6:30pm"
+    ],
+    "age_group": "13-19",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#MON#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7:45pm-9:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#MON#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "10:30am-12:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#MON#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "12:45pm-2:45pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#TUE#19+#",
+    "sport": "Basketball",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "TUE",
+    "slots": [
+      "7:45pm-9:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#TUE#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "12:15pm-2:15pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#TUE#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "10am-12pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#WED#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "12pm-2pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#WED#19+#",
+    "sport": "Ball Hockey",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "7:45pm-9:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#WED#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "9:45am-11:45am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#THU#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "7:45pm-9:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#THU#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "12:45pm-2:45pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#FRI#13-19#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "3:30pm-5pm"
+    ],
+    "age_group": "13-19",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#FRI#13-19#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "5:15pm-6:45pm"
+    ],
+    "age_group": "13-19",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#FRI#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7:45pm-9:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#FRI#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "12pm-2pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#SAT#13-19#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "5:30pm-7:30pm"
+    ],
+    "age_group": "13-19",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#SAT#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "7:45pm-9:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#SAT#6-12#",
+    "sport": "Basketball",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "3pm-4pm",
+      "4pm-5pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#SUN#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#SUN#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "3:15pm-5:15pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#SUN#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "5:30pm-7:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#SUN#6-12#",
+    "sport": "Badminton",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "11:45am-1pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C693#SUN#6-12#",
+    "sport": "Table Tennis",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "10:30am-11:30am"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C693"
+  },
+  {
+    "schedule_id": "C712#MON#13-17#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "3:30pm-5:30pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C712"
+  },
+  {
+    "schedule_id": "C712#MON#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C712"
+  },
+  {
+    "schedule_id": "C712#MON#60+#",
+    "sport": "Ball Hockey",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "9am-11am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C712"
+  },
+  {
+    "schedule_id": "C712#MON#60+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C712"
+  },
+  {
+    "schedule_id": "C712#TUE#60+#",
+    "sport": "Baseball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "11:30am-12:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C712"
+  },
+  {
+    "schedule_id": "C712#TUE#60+#",
+    "sport": "Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "1:15pm-3:15pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C712"
+  },
+  {
+    "schedule_id": "C712#WED#13-17#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "3:30pm-5:30pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C712"
+  },
+  {
+    "schedule_id": "C712#WED#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "10:30am-12:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C712"
+  },
+  {
+    "schedule_id": "C712#WED#60+#",
+    "sport": "Golf",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "1:15pm-3:15pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C712"
+  },
+  {
+    "schedule_id": "C712#THU#16+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "8:15pm-10:15pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C712"
+  },
+  {
+    "schedule_id": "C712#THU#60+#",
+    "sport": "Tennis",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "1:15pm-3:15pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C712"
+  },
+  {
+    "schedule_id": "C712#FRI#13-17#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "3:30pm-6pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C712"
+  },
+  {
+    "schedule_id": "C712#FRI#60+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C712"
+  },
+  {
+    "schedule_id": "C712#SAT#13-17#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "7:30pm-10pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C712"
+  },
+  {
+    "schedule_id": "C712#SAT#18+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "7:30pm-10pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C712"
+  },
+  {
+    "schedule_id": "C731#THU#60+#",
+    "sport": "Carpet Bowling",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "9:30am-11:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C731"
+  },
+  {
+    "schedule_id": "C743#TUE#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C743"
+  },
+  {
+    "schedule_id": "C743#WED#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "9:30am-11:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C743"
+  },
+  {
+    "schedule_id": "C743#FRI#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C743"
+  },
+  {
+    "schedule_id": "C750#TUE#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "9am-11am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C750"
+  },
+  {
+    "schedule_id": "C750#THU#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "9am-11am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C750"
+  },
+  {
+    "schedule_id": "C751#FRI#16-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "6:15pm-7:15pm"
+    ],
+    "age_group": "16-18",
+    "community_center_id": "C751"
+  },
+  {
+    "schedule_id": "C751#FRI#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7:15pm-8:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C751"
+  },
+  {
+    "schedule_id": "C751#SAT#6-12#",
+    "sport": "Open Gym",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "2:45pm-4:45pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C751"
+  },
+  {
+    "schedule_id": "C751#SUN#16-24#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "3:30pm-5pm"
+    ],
+    "age_group": "16-24",
+    "community_center_id": "C751"
+  },
+  {
+    "schedule_id": "C793#MON#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "10am-12pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C793"
+  },
+  {
+    "schedule_id": "C793#MON#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "11am-2pm",
+      "6pm-9pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C793"
+  },
+  {
+    "schedule_id": "C793#TUE#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "1pm-4pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C793"
+  },
+  {
+    "schedule_id": "C793#WED#60+#",
+    "sport": "Bocce",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "WED",
+    "slots": [
+      "1pm-4pm",
+      "7pm-10pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C793"
+  },
+  {
+    "schedule_id": "C793#THU#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "1pm-4pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C793"
+  },
+  {
+    "schedule_id": "C793#THU#60+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C793"
+  },
+  {
+    "schedule_id": "C793#FRI#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "12:30pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C793"
+  },
+  {
+    "schedule_id": "C793#FRI#60+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "9:30am-11:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C793"
+  },
+  {
+    "schedule_id": "C793#FRI#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "1pm-4pm",
+      "7pm-10pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C793"
+  },
+  {
+    "schedule_id": "C793#SAT#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "12pm-4pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C793"
+  },
+  {
+    "schedule_id": "C793#SUN#60+#",
+    "sport": "Bocce",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "12pm-4pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C793"
+  },
+  {
+    "schedule_id": "C822#TUE#18+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "9:15am-1pm",
+      "1pm-6pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C822"
+  },
+  {
+    "schedule_id": "C892#MON#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "9am-5pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C892"
+  },
+  {
+    "schedule_id": "C892#TUE#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "9am-5pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C892"
+  },
+  {
+    "schedule_id": "C892#WED#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "9am-5pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C892"
+  },
+  {
+    "schedule_id": "C892#THU#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "9am-5pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C892"
+  },
+  {
+    "schedule_id": "C892#FRI#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "9am-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C892"
+  },
+  {
+    "schedule_id": "C892#SAT#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "10am-4pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C892"
+  },
+  {
+    "schedule_id": "C892#SUN#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "10am-4pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C892"
+  },
+  {
+    "schedule_id": "C1063#MON#13+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7:30pm-9pm"
+    ],
+    "age_group": "13+",
+    "community_center_id": "C1063"
+  },
+  {
+    "schedule_id": "C1063#MON#18+#",
+    "sport": "Open Gym",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "12:30pm-3pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C1063"
+  },
+  {
+    "schedule_id": "C1063#TUE#16+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7:30pm-9pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C1063"
+  },
+  {
+    "schedule_id": "C1063#TUE#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "12pm-3pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1063"
+  },
+  {
+    "schedule_id": "C1063#TUE#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "9am-11am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1063"
+  },
+  {
+    "schedule_id": "C1063#WED#16+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "7:15pm-9pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C1063"
+  },
+  {
+    "schedule_id": "C1063#WED#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "12:45pm-2:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1063"
+  },
+  {
+    "schedule_id": "C1063#THU#13-24#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "5pm-9pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C1063"
+  },
+  {
+    "schedule_id": "C1063#THU#18+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "11:30am-3pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C1063"
+  },
+  {
+    "schedule_id": "C1063#THU#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "9am-11am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1063"
+  },
+  {
+    "schedule_id": "C1063#FRI#13-24#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "6:30pm-9pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C1063"
+  },
+  {
+    "schedule_id": "C1063#FRI#18+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "11:30am-3pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C1063"
+  },
+  {
+    "schedule_id": "C1063#SUN#13+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "2:15pm-4:15pm"
+    ],
+    "age_group": "13+",
+    "community_center_id": "C1063"
+  },
+  {
+    "schedule_id": "C1063#SUN#16+#",
+    "sport": "Basketball",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "4:30pm-6:30pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C1063"
+  },
+  {
+    "schedule_id": "C1063#SUN#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "9:30am-11:30am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1063"
+  },
+  {
+    "schedule_id": "C1063#SUN#6+#",
+    "sport": "Badminton",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "12pm-2pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C1063"
+  },
+  {
+    "schedule_id": "C1076#WED#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "12:30pm-2:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1076"
+  },
+  {
+    "schedule_id": "C1076#THU#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "1:30pm-3:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1076"
+  },
+  {
+    "schedule_id": "C1076#FRI#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "12:30pm-2:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1076"
+  },
+  {
+    "schedule_id": "C1105#MON#13-17#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "3:30pm-5:30pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C1105"
+  },
+  {
+    "schedule_id": "C1105#TUE#13-17#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "3:30pm-5:30pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C1105"
+  },
+  {
+    "schedule_id": "C1105#TUE#19-58#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "2pm-3pm"
+    ],
+    "age_group": "19-58",
+    "community_center_id": "C1105"
+  },
+  {
+    "schedule_id": "C1105#WED#13-17#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "3:30pm-5:30pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C1105"
+  },
+  {
+    "schedule_id": "C1105#THU#13-17#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "3:30pm-5:30pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C1105"
+  },
+  {
+    "schedule_id": "C1105#THU#19-58#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "2pm-3pm"
+    ],
+    "age_group": "19-58",
+    "community_center_id": "C1105"
+  },
+  {
+    "schedule_id": "C1105#THU#60+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "2pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C1105"
+  },
+  {
+    "schedule_id": "C1463#MON#13-18#",
+    "sport": "Volleyball",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "MON",
+    "slots": [
+      "4:30pm-7pm",
+      "7:45pm-9:45pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#MON#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "9:30am-11:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#MON#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "1:30pm-3:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#TUE#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#TUE#6-12#",
+    "sport": "Multi-Sport",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "TUE",
+    "slots": [
+      "4pm-6:30pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#TUE#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "1:30pm-3:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#WED#13-15#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "5:30pm-7:15pm"
+    ],
+    "age_group": "13-15",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#WED#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#WED#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#WED#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "10:30am-12:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#WED#9-12#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "3:30pm-5:15pm"
+    ],
+    "age_group": "9-12",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#THU#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "4:30pm-6:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#THU#19+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#THU#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "11:15am-1:15pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#THU#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "1:45pm-3:45pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#FRI#13-15#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "4pm-7pm"
+    ],
+    "age_group": "13-15",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#FRI#16-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7:15pm-9:15pm"
+    ],
+    "age_group": "16-18",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#FRI#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "10:15am-12:15pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#FRI#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#SAT#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "5:30pm-7:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#SAT#6-12#",
+    "sport": "Basketball",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "12pm-2pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#SAT#6-12#",
+    "sport": "Pickleball",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "2:30pm-5pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#SAT#6-12#",
+    "sport": "Soccer",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "9:30am-11:30am"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#SUN#13-18#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "6:30pm-8:30pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#SUN#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "9am-11am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#SUN#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "4:15pm-6:15pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#SUN#6-12#",
+    "sport": "Badminton",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "11:15am-12:15pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#SUN#6-12#",
+    "sport": "Basketball",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "1:45pm-2:45pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#SUN#6-12#",
+    "sport": "Soccer",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "12:30pm-1:30pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1463#SUN#6-12#",
+    "sport": "Table Tennis",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "3pm-4pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C1463"
+  },
+  {
+    "schedule_id": "C1865#MON#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "3:30pm-6pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C1865"
+  },
+  {
+    "schedule_id": "C1865#MON#13-18#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "3:30pm-6pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C1865"
+  },
+  {
+    "schedule_id": "C1865#MON#18+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "6:30pm-9pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C1865"
+  },
+  {
+    "schedule_id": "C1865#MON#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "12:30pm-3pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1865"
+  },
+  {
+    "schedule_id": "C1865#MON#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "9am-11:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C1865"
+  },
+  {
+    "schedule_id": "C1865#TUE#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "12:30pm-3pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1865"
+  },
+  {
+    "schedule_id": "C1865#TUE#19+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "6:30pm-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1865"
+  },
+  {
+    "schedule_id": "C1865#WED#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "12:30pm-3pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1865"
+  },
+  {
+    "schedule_id": "C1865#WED#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "9am-11:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C1865"
+  },
+  {
+    "schedule_id": "C1865#THU#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "12:30pm-3pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1865"
+  },
+  {
+    "schedule_id": "C1865#THU#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "6:30pm-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1865"
+  },
+  {
+    "schedule_id": "C1865#FRI#13-18#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "3:30pm-6pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C1865"
+  },
+  {
+    "schedule_id": "C1865#FRI#13-18#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "3:30pm-6pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C1865"
+  },
+  {
+    "schedule_id": "C1865#FRI#18+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "6:30pm-9pm"
+    ],
+    "age_group": "18+",
+    "community_center_id": "C1865"
+  },
+  {
+    "schedule_id": "C1865#FRI#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "6:30pm-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1865"
+  },
+  {
+    "schedule_id": "C1865#FRI#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "12:30pm-3pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C1865"
+  },
+  {
+    "schedule_id": "C2773#MON#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "2:45pm-4:15pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#MON#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7:45pm-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#MON#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "10:30am-12pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#MON#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "12:30pm-2:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#TUE#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "12pm-2pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#TUE#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "10am-12pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#WED#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "7:45pm-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#WED#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "11am-1pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#THU#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "1:30pm-4pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#THU#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "11:15am-1pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#THU#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "9am-11am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#FRI#13-18#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "4pm-6pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#FRI#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "8am-10am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#FRI#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "10:15am-12pm",
+      "6:30pm-8:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#SAT#0+#",
+    "sport": "Open Gym",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "9am-10:30am"
+    ],
+    "age_group": "0+",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#SAT#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "10:45am-12:45pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#SAT#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "1:30pm-3:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#SUN#0+#",
+    "sport": "Open Gym",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "9am-10:30am"
+    ],
+    "age_group": "0+",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#SUN#13-18#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "10:45am-12:45pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2773#SUN#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "1:30pm-3:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2773"
+  },
+  {
+    "schedule_id": "C2791#MON#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "8pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#MON#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "1:30pm-3:30pm",
+      "6:45pm-7:45pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#MON#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "11am-1pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#MON#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "8:15am-10:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#TUE#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "1:30pm-3pm",
+      "7:15pm-9:15pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#TUE#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "11am-1pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#TUE#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "8:15am-10:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#WED#13-17#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "3:15pm-4:15pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#WED#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "8pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#WED#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "1:30pm-3pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#WED#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "11am-1pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#WED#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "8:15am-10:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#THU#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "1:30pm-3pm",
+      "8:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#THU#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "11am-1pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#THU#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "7:15pm-8:15pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#THU#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "8:15am-10:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#FRI#13-16#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "3:30pm-5pm"
+    ],
+    "age_group": "13-16",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#FRI#18-23#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "5:15pm-6:45pm"
+    ],
+    "age_group": "18-23",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#FRI#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "12:30pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#FRI#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "8:15am-10:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#SAT#13-16#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "6pm-7:30pm"
+    ],
+    "age_group": "13-16",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#SAT#13-17#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "1:45pm-2:45pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#SAT#18-23#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "7:45pm-9:15pm"
+    ],
+    "age_group": "18-23",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#SAT#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "4:30pm-5:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#SAT#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "3pm-4:15pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#SUN#13-24#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "4:15pm-5:45pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#SUN#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "8pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#SUN#6-17#",
+    "sport": "Open Gym",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "2:30pm-4pm"
+    ],
+    "age_group": "6-17",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C2791#SUN#60+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "6pm-7:45pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C2791"
+  },
+  {
+    "schedule_id": "C3502#MON#13+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "6pm-9pm"
+    ],
+    "age_group": "13+",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#MON#16+#",
+    "sport": "Multi-Sport",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "MON",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#MON#6-12#",
+    "sport": "Rock Wall Climbing",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "5:30pm-8:30pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#MON#6-12#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "4pm-6pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#TUE#16+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7pm-9:30pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#TUE#6-12#",
+    "sport": "Rock Wall Climbing",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "5:30pm-8:30pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#TUE#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "9am-11am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#WED#13+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "6pm-9pm"
+    ],
+    "age_group": "13+",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#WED#6-12#",
+    "sport": "Rock Wall Climbing",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "5:30pm-8:30pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#WED#6-12#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "4pm-6pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#THU#16+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "7pm-9:30pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#THU#6-12#",
+    "sport": "Rock Wall Climbing",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "5:30pm-8:30pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#FRI#13-17#",
+    "sport": "Multi-Sport",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "4pm-6pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#FRI#16+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7pm-9:15pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#FRI#6-12#",
+    "sport": "Rock Wall Climbing",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "5:30pm-8:30pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#SAT#13-24#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "2pm-3:30pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#SAT#16+#",
+    "sport": "Multi-Sport",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "3:45pm-5:30pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#SAT#6-12#",
+    "sport": "Rock Wall Climbing",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "10am-12:30pm",
+      "1pm-3pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#SUN#13-24#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "10am-12:30pm"
+    ],
+    "age_group": "13-24",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#SUN#16+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "1pm-3pm"
+    ],
+    "age_group": "16+",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#SUN#6+#",
+    "sport": "Pickleball",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "3:30pm-5:30pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3502#SUN#6-12#",
+    "sport": "Rock Wall Climbing",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "10am-12:30pm",
+      "1pm-3pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3502"
+  },
+  {
+    "schedule_id": "C3643#MON#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "6pm-8pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#MON#19+#",
+    "sport": "Basketball",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "MON",
+    "slots": [
+      "8pm-10pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#MON#6-12#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "5pm-6pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#TUE#13-18#",
+    "sport": "Multi-Sport",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "5:30pm-7:30pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#TUE#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "6pm-8pm",
+      "8pm-10pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#TUE#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "8pm-10pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#TUE#5+#",
+    "sport": "Pickleball",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "TUE",
+    "slots": [
+      "4:30pm-6pm"
+    ],
+    "age_group": "5+",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#WED#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "6pm-8pm",
+      "8pm-10pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#WED#19+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "8pm-10pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#WED#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "5pm-6pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#THU#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "7pm-8:30pm",
+      "8:30pm-10pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#THU#19+#",
+    "sport": "Ball Hockey",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "8pm-10pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#THU#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "5:45pm-7:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#THU#5+#",
+    "sport": "Badminton",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "THU",
+    "slots": [
+      "5:15pm-6:30pm"
+    ],
+    "age_group": "5+",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#FRI#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "6pm-8pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#FRI#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "8pm-10pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#FRI#6-12#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "5pm-6pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#SAT#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "3pm-5pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#SAT#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "5:30pm-7:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#SUN#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "1pm-2:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#SUN#19+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "3:30pm-5:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3643#SUN#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "3:30pm-5:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3643"
+  },
+  {
+    "schedule_id": "C3732#MON#1-5#",
+    "sport": "Open Gym",
+    "tags": [
+      "Caregiver"
+    ],
+    "day_of_week": "MON",
+    "slots": [
+      "9:30am-11:30am"
+    ],
+    "age_group": "1-5",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#MON#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "12pm-2pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#MON#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7am-9am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#MON#19+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#TUE#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7am-9am",
+      "12pm-2pm",
+      "5:15pm-7:15pm",
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#TUE#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "9:30am-11:30am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#WED#1-5#",
+    "sport": "Open Gym",
+    "tags": [
+      "Caregiver"
+    ],
+    "day_of_week": "WED",
+    "slots": [
+      "9:30am-11:30am"
+    ],
+    "age_group": "1-5",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#WED#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "7am-9am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#WED#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#WED#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "12pm-2pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#WED#6-12#",
+    "sport": "Open Gym",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "WED",
+    "slots": [
+      "6pm-7:15pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#THU#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "7am-9am",
+      "9:30am-11:30am",
+      "12pm-2pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#THU#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "5:15pm-7:15pm",
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#FRI#1-5#",
+    "sport": "Open Gym",
+    "tags": [
+      "Caregiver"
+    ],
+    "day_of_week": "FRI",
+    "slots": [
+      "9:30am-11:30am"
+    ],
+    "age_group": "1-5",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#FRI#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "4:30pm-6:30pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#FRI#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#FRI#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7am-9am",
+      "12pm-2pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#SAT#1-5#",
+    "sport": "Open Gym",
+    "tags": [
+      "Caregiver"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "9am-11am"
+    ],
+    "age_group": "1-5",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#SAT#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "5:30pm-7:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#SUN#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "5:30pm-7:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#SUN#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "9:30am-11:30am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#SUN#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "1:30pm-3:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3732#SUN#6-12#",
+    "sport": "Open Gym",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "12pm-1pm",
+      "3:30pm-5pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3732"
+  },
+  {
+    "schedule_id": "C3775#MON#13-18#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "5:15pm-7:15pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#MON#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#MON#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "11:30am-1pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#MON#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "9:30am-11am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#MON#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7:30am-9am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#MON#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "1:30pm-3pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#TUE#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "9:30am-11am"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#TUE#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "1:30pm-3pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#TUE#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#TUE#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7:30am-9am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#TUE#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "11:30am-1pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#WED#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "11:30am-1pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#WED#13-18#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "5:15pm-7:15pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#WED#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "1:30pm-3pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#WED#19+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#WED#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "7:30am-9am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#WED#60+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "9:30am-11am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#THU#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "5:15pm-7:15pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#THU#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "1:30pm-3pm",
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#THU#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "7:30am-9am",
+      "11:30am-1pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#THU#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "9:30am-11am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#FRI#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "9:30am-11am"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#FRI#13-18#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "5:15pm-7:15pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#FRI#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "1:30pm-3pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#FRI#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7:30pm-9:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#FRI#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "11:30am-1pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#FRI#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "7:30am-9am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#SAT#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "6pm-7:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#SAT#6-12#",
+    "sport": "Open Gym",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "10:15am-11:45am"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#SAT#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "8:30am-10am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#SUN#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "6pm-7:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#SUN#6-12#",
+    "sport": "Badminton",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "10:15am-11:45am"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#SUN#6-12#",
+    "sport": "Open Gym",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "12:15pm-3:30pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#SUN#6-12#",
+    "sport": "Pickleball",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "4pm-5:30pm"
+    ],
+    "age_group": "6-12",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3775#SUN#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "8:30am-10am"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3775"
+  },
+  {
+    "schedule_id": "C3857#MON#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "7:15pm-8:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#MON#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "9:15am-11:15am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#MON#6+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "9:15am-8:45pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#MON#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "11:30am-1pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#TUE#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "1:30pm-3:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#TUE#19+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "7:15pm-8:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#TUE#6+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "9:15am-8:45pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#TUE#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "11:45am-1:15pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#WED#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "9:15am-11:15am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#WED#6+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "9:15am-1pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#WED#60+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "11:30am-1pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#THU#13-18#",
+    "sport": "Volleyball",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "THU",
+    "slots": [
+      "4:30pm-6:30pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#THU#19+#",
+    "sport": "Basketball",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "THU",
+    "slots": [
+      "2pm-4pm",
+      "6:45pm-8:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#THU#19+#",
+    "sport": "Pickleball",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "THU",
+    "slots": [
+      "9:15am-11:15am"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#THU#19+#",
+    "sport": "Soccer",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "THU",
+    "slots": [
+      "2pm-4pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#THU#6+#",
+    "sport": "Table Tennis",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "THU",
+    "slots": [
+      "9:15am-8:45pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#THU#60+#",
+    "sport": "Badminton",
+    "tags": [
+      "Women"
+    ],
+    "day_of_week": "THU",
+    "slots": [
+      "11:30am-1:30pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#FRI#13-18#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "4:30pm-6:30pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#FRI#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "2:15pm-4:15pm",
+      "6:45pm-8:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#FRI#6+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "9:15am-8:45pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#FRI#60+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "11:45am-1:45pm"
+    ],
+    "age_group": "60+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#SAT#13-18#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "1:30pm-3:15pm"
+    ],
+    "age_group": "13-18",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#SAT#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "5:45pm-7:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#SAT#19+#",
+    "sport": "Soccer",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "3:30pm-5:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#SAT#6+#",
+    "sport": "Badminton",
+    "tags": [
+      "Family"
+    ],
+    "day_of_week": "SAT",
+    "slots": [
+      "11:30am-1:15pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#SAT#6+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "SAT",
+    "slots": [
+      "9:15am-7:45pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#SUN#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "11:30am-1:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#SUN#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "1:45pm-3:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#SUN#19+#",
+    "sport": "Dodgeball",
+    "tags": [
+      "2SLGBTQ+"
+    ],
+    "day_of_week": "SUN",
+    "slots": [
+      "3:45pm-5:30pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#SUN#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "5:45pm-7:45pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3857#SUN#6+#",
+    "sport": "Table Tennis",
+    "tags": [],
+    "day_of_week": "SUN",
+    "slots": [
+      "9:15am-7:45pm"
+    ],
+    "age_group": "6+",
+    "community_center_id": "C3857"
+  },
+  {
+    "schedule_id": "C3858#MON#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "MON",
+    "slots": [
+      "8:30pm-10pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3858"
+  },
+  {
+    "schedule_id": "C3858#TUE#19+#",
+    "sport": "Badminton",
+    "tags": [],
+    "day_of_week": "TUE",
+    "slots": [
+      "5:45pm-7:15pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3858"
+  },
+  {
+    "schedule_id": "C3858#WED#19+#",
+    "sport": "Volleyball",
+    "tags": [],
+    "day_of_week": "WED",
+    "slots": [
+      "8:30pm-10pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3858"
+  },
+  {
+    "schedule_id": "C3858#THU#13-17#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "5:45pm-7:15pm"
+    ],
+    "age_group": "13-17",
+    "community_center_id": "C3858"
+  },
+  {
+    "schedule_id": "C3858#THU#19+#",
+    "sport": "Basketball",
+    "tags": [],
+    "day_of_week": "THU",
+    "slots": [
+      "7:30pm-9pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3858"
+  },
+  {
+    "schedule_id": "C3858#FRI#19+#",
+    "sport": "Pickleball",
+    "tags": [],
+    "day_of_week": "FRI",
+    "slots": [
+      "8:30pm-10pm"
+    ],
+    "age_group": "19+",
+    "community_center_id": "C3858"
+  }
+]

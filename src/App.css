@@ -7,7 +7,10 @@
   background: var(--primary-dark);
   color: rgba(255,255,255,0.6);
   text-align: center;
-  padding: 20px 24px;
+  padding-top: 20px;
+  padding-bottom: calc(20px + env(safe-area-inset-bottom));
+  padding-left: max(24px, env(safe-area-inset-left));
+  padding-right: max(24px, env(safe-area-inset-right));
   font-size: 0.82rem;
   letter-spacing: 0.01em;
 }

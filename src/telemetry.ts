@@ -54,3 +54,14 @@ export const trackUmamiEvent = (eventName: string, metadata?: any) => {
         console.error('UmamiEvent Error:', error);
     }
 };
+
+export const trackPWAInstall = (source: string = 'appinstalled') => {
+    try {
+        trackTelemetryDeckEvent(`pwa_installed:${source}`);
+        goatCounterEvent(`pwa_installed/${source}`, true);
+        simpleAnalyticsEvent('pwa_installed', { source });
+    } catch (error) {
+        console.error('PWA Install Tracking Error:', error);
+    }
+};
+

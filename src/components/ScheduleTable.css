@@ -127,6 +127,21 @@
   white-space: nowrap;
 }
 
+/* ─── Distance Badge ─────────────────────────────────────────────────────── */
+.distance-badge {
+  display: inline-flex;
+  align-items: center;
+  /* gap: 1px; */
+  padding: 5px 10px 5px 5px;
+  background: var(--primary-xlight);
+  color: var(--primary);
+  border: 1px solid rgba(22, 87, 136, 0.2);
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 /* ─── Day Chip ───────────────────────────────────────────────────────────── */
 .day-chip {
   display: inline-block;
@@ -253,9 +268,9 @@
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     padding: 16px;
-    gap: 10px;
+    gap: 7px;
     transition: transform 0.2s;
   }
 
@@ -279,27 +294,45 @@
     padding-right: 0;
   }
 
+  /* Program options tags styling */
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 4px;
+  }
+
   /* 1. Centre Name & Address (Full width) */
   .schedule-table td:nth-child(1) {
     width: 100%;
-    margin-bottom: 6px;
+    order: 1;
+    margin-bottom: 4px;
   }
 
   .center-name-link {
     font-size: 1.05rem;
   }
 
-  /* 2. Metadata Flex Row (Day, Age, Drop-in, Free) */
-  .schedule-table td:nth-child(2),
-  .schedule-table td:nth-child(4),
-  .schedule-table td:nth-child(5),
-  .schedule-table td:nth-child(6) {
+  /* 2. Metadata Flex Row (Day, Age, Free) - line up on one line */
+  .schedule-table td:nth-child(2) {
+    order: 2;
     flex: 0 0 auto;
   }
 
-  /* 3. Slots (Full width, horizontal chips) */
+  .schedule-table td:nth-child(4) {
+    order: 3;
+    flex: 0 0 auto;
+  }
+
+  .schedule-table td:nth-child(5) {
+    order: 4;
+    flex: 0 0 auto;
+  }
+
+  /* 3. Slots (Full width, next line) */
   .schedule-table td:nth-child(3) {
     width: 100%;
+    order: 5;
     margin-top: 6px;
   }
 
@@ -314,10 +347,11 @@
   }
 
   /* 4. Actions (Full width block) */
-  .schedule-table td:nth-child(7) {
+  .schedule-table td:nth-child(6) {
     width: 100%;
-    margin-top: 10px;
-    padding-top: 14px;
+    order: 6;
+    margin-top: 2px;
+    padding-top: 8px;
     border-top: 1px dashed var(--border);
   }
 
@@ -329,6 +363,6 @@
   .action-btn {
     flex: 1;
     justify-content: center;
-    padding: 10px;
+    padding: 8px;
   }
 }

@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  height: var(--navbar-h);
+  padding-top: env(safe-area-inset-top);
   background: var(--primary);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(12px);
@@ -11,7 +11,7 @@
 }
 
 .navbar-inner {
-  height: 100%;
+  height: var(--navbar-h);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,7 +23,8 @@
     position: static;
   }
   .navbar-inner {
-    padding: 0 1rem;
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
   }
 }
 

@@ -97,7 +97,7 @@ HEADERS = {
 }
 
 # Gemini API key — replace with your actual key.
-GEMINI_API_KEY = " "
+GEMINI_API_KEY = "AIzaSyBUi0EcVAfKowLnFPFSz5TyX73cn4o34K4"
 
 # Canonical sport names. Entries whose sport field does NOT exactly match
 # one of these will be sent to Gemini for normalization.
@@ -549,7 +549,7 @@ Here are the entries to normalize:
 
     api_url = (
         f"https://generativelanguage.googleapis.com/v1beta/models/"
-        f"gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}"
+        f"gemini-3.1-flash-lite:generateContent?key={GEMINI_API_KEY}"
     )
     request_body = json.dumps({
         "contents": [{

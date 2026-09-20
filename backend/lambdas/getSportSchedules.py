@@ -91,6 +91,8 @@ def handler(event, context):
                 "ward":     center.get("ward", ""),
                 "phone":    center.get("phone", ""),
                 "website":  center.get("website", ""),
+                "lat":      center.get("lat"),
+                "lng":      center.get("lng"),
                 "maps_url": (
                     f"https://www.google.com/maps/search/?api=1&query={center.get('address', '').replace(' ', '+')}"
                     if center.get("address") else ""

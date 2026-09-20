@@ -1,5 +1,7 @@
+import { useMemo } from "react";
 import "./ScheduleTable.css";
 import { trackTelemetryDeckEvent, goatCounterEvent, simpleAnalyticsEvent } from "../telemetry";
+import { getScheduleDistance } from "../data/centreCoordinates";
 
 const DAY_ORDER = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
 const DAY_FULL = {
@@ -10,7 +12,6 @@ const DAY_FULL = {
 function formatTime12h(timeStr) {
   if (!timeStr) return '';
   if (/am|pm/i.test(timeStr)) {
-    // If it's already 12h format, clean up leading zeros
     return timeStr.replace(/^0/, '').trim();
   }
   const [h, m] = timeStr.split(":");
@@ -26,7 +27,15 @@ function formatSlot12h(slot) {
   return `${formatTime12h(start.trim())} - ${formatTime12h(end.trim())}`;
 }
 
-export default function ScheduleTable({ schedules }) {
+function formatDistance(distKm) {
+  if (distKm == null || isNaN(distKm)) return null;
+  if (distKm < 1) {
+    return `${Math.round(distKm * 1000)} m away`;
+  }
+  return `${distKm.toFixed(1)} km away`;
+}
+
+export default function ScheduleTable({ schedules, userLocation, isDistanceSortActive }) {
   if (schedules.length === 0) {
     return (
       <div className="empty-state">
@@ -37,9 +46,26 @@ export default function ScheduleTable({ schedules }) {
     );
   }
 
-  const sorted = [...schedules].sort(
-    (a, b) => DAY_ORDER.indexOf(a.day_of_week) - DAY_ORDER.indexOf(b.day_of_week)
-  );
+  const sorted = useMemo(() => {
+    const list = schedules.map((row) => ({
+      ...row,
+      distance: getScheduleDistance(row, userLocation),
+    }));
+
+    if (isDistanceSortActive) {
+      list.sort((a, b) => {
+        if (a.distance != null && b.distance != null) {
+          if (a.distance !== b.distance) return a.distance - b.distance;
+        } else if (a.distance != null) return -1;
+        else if (b.distance != null) return 1;
+        return DAY_ORDER.indexOf(a.day_of_week) - DAY_ORDER.indexOf(b.day_of_week);
+      });
+    } else {
+      list.sort((a, b) => DAY_ORDER.indexOf(a.day_of_week) - DAY_ORDER.indexOf(b.day_of_week));
+    }
+
+    return list;
+  }, [schedules, userLocation, isDistanceSortActive]);
 
   return (
     <div className="schedule-table-wrap">
@@ -51,7 +77,6 @@ export default function ScheduleTable({ schedules }) {
               <th scope="col">Day</th>
               <th scope="col">Time Slots</th>
               <th scope="col">Age Group</th>
-              <th scope="col">Drop-in</th>
               <th scope="col">Free</th>
               <th scope="col" className="col-actions">Actions</th>
             </tr>
@@ -61,20 +86,27 @@ export default function ScheduleTable({ schedules }) {
               <tr key={i} className="schedule-row">
                 {/* Centre name */}
                 <td className="td-center-name">
-                  <a
-                    href={row.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="center-name-link"
-                    title={`Visit ${row.name} website`}
-                    onClick={() => {
-                      trackTelemetryDeckEvent(`centre_website_clicked:${row.name}`);
-                      goatCounterEvent(`centre_website_clicked/${row.name}`, true);
-                      simpleAnalyticsEvent('centre_website_clicked', { centre: row.name });
-                    }}
-                  >
-                    {row.name}
-                  </a>
+                  <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '4px' }}>
+                    <a
+                      href={row.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="center-name-link"
+                      title={`Visit ${row.name} website`}
+                      onClick={() => {
+                        trackTelemetryDeckEvent(`centre_website_clicked:${row.name}`);
+                        goatCounterEvent(`centre_website_clicked/${row.name}`, true);
+                        simpleAnalyticsEvent('centre_website_clicked', { centre: row.name });
+                      }}
+                    >
+                      {row.name}
+                    </a>
+                    {isDistanceSortActive && row.distance != null && (
+                      <span className="distance-badge" title={`${row.distance.toFixed(2)} km from your location`}>
+                        📍 {formatDistance(row.distance)}
+                      </span>
+                    )}
+                  </div>
                   {row.tags && row.tags.length > 0 && (
                      <div className="tags-container" style={{ display: "flex", gap: "6px", marginTop: "4px" }}>
                        {row.tags.map(tag => (
@@ -104,15 +136,6 @@ export default function ScheduleTable({ schedules }) {
                 {/* Age Group */}
                 <td>
                   <span className="age-chip">{row.age_group}</span>
-                </td>
-
-                {/* Drop-in */}
-                <td className="td-center">
-                  {row.is_drop_in ? (
-                    <span className="badge badge-dropin">✓ Drop-in</span>
-                  ) : (
-                    <span className="badge badge-reg">Register</span>
-                  )}
                 </td>
 
                 {/* Free */}

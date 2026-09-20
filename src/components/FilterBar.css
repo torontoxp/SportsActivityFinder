@@ -4,7 +4,7 @@
   border-bottom: 1px solid var(--border);
   box-shadow: 0 2px 12px rgba(22, 87, 136, 0.06);
   position: sticky;
-  top: var(--navbar-h);
+  top: calc(var(--navbar-h) + env(safe-area-inset-top));
   z-index: 90;
 }
 
@@ -53,6 +53,80 @@
 
 .filter-clear-btn:hover {
   background: #ffe4e4;
+}
+
+/* Sort By Distance Button */
+.filter-sort-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px 5px 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-medium);
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-full);
+  transition: var(--transition);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.filter-sort-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--primary-xlight);
+}
+
+.filter-sort-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+  box-shadow: 0 2px 8px rgba(22, 87, 136, 0.25);
+}
+
+.filter-sort-btn.loading {
+  opacity: 0.75;
+  cursor: wait;
+}
+
+/* Location Error Banner */
+.location-error-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+  margin-bottom: 16px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  animation: fadeIn 0.2s ease;
+}
+
+.location-error-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.location-error-text {
+  flex: 1;
+}
+
+.location-error-close {
+  background: none;
+  border: none;
+  color: #991b1b;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 2px 6px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.location-error-close:hover {
+  opacity: 1;
 }
 
 .filter-groups {
@@ -313,7 +387,7 @@
   }
 
   .filter-bar {
-    position: static;
+    top: env(safe-area-inset-top);
   }
 
   .centre-dropdown-panel {

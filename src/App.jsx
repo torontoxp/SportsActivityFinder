@@ -1,11 +1,22 @@
+import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import SportResultsPage from "./pages/SportResultsPage";
-import { trackTelemetryDeckEvent, goatCounterEvent, simpleAnalyticsEvent } from "./telemetry";
+import { trackTelemetryDeckEvent, goatCounterEvent, simpleAnalyticsEvent, trackPWAInstall } from "./telemetry";
 import "./App.css";
 
 export default function App() {
+  useEffect(() => {
+    const handleAppInstalled = () => {
+      trackPWAInstall('browser_appinstalled');
+    };
+
+    window.addEventListener("appinstalled", handleAppInstalled);
+    return () => window.removeEventListener("appinstalled", handleAppInstalled);
+  }, []);
+
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="app">
@@ -14,6 +25,7 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/sport/:sportName" element={<SportResultsPage />} />
         </Routes>
+        <ScrollToTop />
         <footer className="footer">
           <p className="footer-text">
             Designed & developed by
