@@ -857,7 +857,7 @@ def normalize_sports_with_cohere(entries: list[dict]) -> list[dict]:
 
 # ----- OpenRouter sport normalization ---------------------------------------
 
-def normalize_sports_with_openrouter(entries: list[dict]) -> list[dict]:
+def normalize_sports_with_openrouter(entries: list[dict], raise_on_failure: bool = False) -> list[dict]:
     """Send schedule entries with non-standard sport names to OpenRouter
     for normalization.
 
@@ -867,6 +867,8 @@ def normalize_sports_with_openrouter(entries: list[dict]) -> list[dict]:
     if not entries:
         return entries
     if not OPENROUTER_API_KEY:
+        if raise_on_failure:
+            raise ValueError("OPENROUTER_API_KEY is not set.")
         log("  ERROR: OPENROUTER_API_KEY is not set. Falling back to original entries.")
         return entries
 
@@ -915,6 +917,8 @@ def normalize_sports_with_openrouter(entries: list[dict]) -> list[dict]:
                 log(f"      Waiting {sleep_time} seconds before retrying...")
                 time.sleep(sleep_time)
 
+    if raise_on_failure:
+        raise RuntimeError("OpenRouter normalization failed after 3 attempts.")
     log(f"      ERROR: Failed after 3 attempts. Falling back to original entries.")
     return entries
 
@@ -1544,7 +1548,7 @@ def main(argv=None) -> int:
                 normalized_entries = normalize_sports_with_gemini(non_standard_entries, raise_on_failure=True)
             except Exception as e:
                 log(f"  Gemini normalization unsuccessful ({e}). Falling back to OpenRouter...")
-                normalized_entries = normalize_sports_with_openrouter(non_standard_entries)
+                normalized_entries = normalize_sports_with_openrouter(non_standard_entries, raise_on_failure=True)
 
         # Merge normalized entries back with standard entries and re-group
         all_schedules = merge_and_regroup(standard_entries, normalized_entries)

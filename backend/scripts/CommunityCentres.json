@@ -10,6 +10,16 @@
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=7"
   },
   {
+    "name": "Adam Beck Community Centre",
+    "address": "79 Lawlor Ave",
+    "district": "Toronto and East York",
+    "ward": "Beaches-East York",
+    "phone": "416-392-0741",
+    "isFree": false,
+    "community_center_id": "C13",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=13"
+  },
+  {
     "name": "Annette Community Recreation Centre",
     "address": "333 Annette St",
     "district": "Toronto and East York",
@@ -40,6 +50,36 @@
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=30"
   },
   {
+    "name": "Brown Community Centre",
+    "address": "454 Avenue Rd",
+    "district": "Toronto and East York",
+    "ward": "Toronto-St. Paul’s",
+    "phone": "416-392-6826",
+    "isFree": false,
+    "community_center_id": "C33",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=33"
+  },
+  {
+    "name": "Earl Beatty Community Centre",
+    "address": "455 Glebeholme Blvd",
+    "district": "Toronto and East York",
+    "ward": "Beaches-East York",
+    "phone": "416-392-0752",
+    "isFree": false,
+    "community_center_id": "C36",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=36"
+  },
+  {
+    "name": "Frankland Community Centre",
+    "address": "816 Logan Ave",
+    "district": "Toronto and East York",
+    "ward": "Toronto-Danforth",
+    "phone": "416-392-0749",
+    "isFree": false,
+    "community_center_id": "C39",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=39"
+  },
+  {
     "name": "Antibes Community Centre",
     "address": "140 Antibes Dr",
     "district": "North York",
@@ -48,6 +88,16 @@
     "isFree": true,
     "community_center_id": "C42",
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=42"
+  },
+  {
+    "name": "Hillcrest Community Centre",
+    "address": "1339 Bathurst St",
+    "district": "Toronto and East York",
+    "ward": "Toronto-St. Paul’s",
+    "phone": "416-392-0746",
+    "isFree": false,
+    "community_center_id": "C48",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=48"
   },
   {
     "name": "Holy Family Community Centre",
@@ -60,6 +110,16 @@
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=52"
   },
   {
+    "name": "Jimmie Simpson Recreation Centre",
+    "address": "870 Queen St E",
+    "district": "Toronto and East York",
+    "ward": "Toronto-Danforth",
+    "phone": "416-392-0751",
+    "isFree": true,
+    "community_center_id": "C58",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=58"
+  },
+  {
     "name": "John Innes Community Recreation Centre",
     "address": "150 Sherbourne St",
     "district": "Toronto and East York",
@@ -70,6 +130,16 @@
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=63"
   },
   {
+    "name": "Main Square Community Recreation Centre",
+    "address": "245 Main St",
+    "district": "Toronto and East York",
+    "ward": "Beaches-East York",
+    "phone": "416-392-1070",
+    "isFree": false,
+    "community_center_id": "C85",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=85"
+  },
+  {
     "name": "Masaryk-Cowan Community Recreation Centre",
     "address": "220 Cowan Ave",
     "district": "Toronto and East York",
@@ -78,6 +148,16 @@
     "isFree": true,
     "community_center_id": "C89",
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=89"
+  },
+  {
+    "name": "Mary McCormick Recreation Centre",
+    "address": "66 Sheridan Ave",
+    "district": "Toronto and East York",
+    "ward": "Davenport",
+    "phone": "416-392-0742",
+    "isFree": false,
+    "community_center_id": "C100",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=100"
   },
   {
     "name": "Earl Bales Community Centre",
@@ -98,6 +178,16 @@
     "isFree": false,
     "community_center_id": "C189",
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=189"
+  },
+  {
+    "name": "Matty Eckler Recreation Centre",
+    "address": "953 Gerrard St E",
+    "district": "Toronto and East York",
+    "ward": "Toronto-Danforth",
+    "phone": "416-392-0750",
+    "isFree": false,
+    "community_center_id": "C234",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=234"
   },
   {
     "name": "Parkdale Community Recreation Centre",
@@ -160,6 +250,36 @@
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=289"
   },
   {
+    "name": "Wallace Emerson Community Recreation Centre",
+    "address": "1260 Dufferin St",
+    "district": "Toronto and East York",
+    "ward": "Davenport",
+    "phone": "416-392-0039",
+    "isFree": false,
+    "community_center_id": "C294",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=294"
+  },
+  {
+    "name": "Fairmount Park Community Centre",
+    "address": "1757 Gerrard St E",
+    "district": "Toronto and East York",
+    "ward": "Beaches-East York",
+    "phone": "416-392-7060",
+    "isFree": false,
+    "community_center_id": "C308",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=308"
+  },
+  {
+    "name": "Secord Community Centre",
+    "address": "91 Barrington Ave",
+    "district": "Toronto and East York",
+    "ward": "Beaches-East York",
+    "phone": "416-396-2857",
+    "isFree": true,
+    "community_center_id": "C325",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=325"
+  },
+  {
     "name": "East York Community Recreation Centre",
     "address": "10811/2 Pape Ave",
     "district": "Toronto and East York",
@@ -168,6 +288,26 @@
     "isFree": false,
     "community_center_id": "C329",
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=329"
+  },
+  {
+    "name": "Terry Fox Community Centre",
+    "address": "2 Gledhill Ave",
+    "district": "Toronto and East York",
+    "ward": "Beaches-East York",
+    "phone": "416-392-7060",
+    "isFree": false,
+    "community_center_id": "C336",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=336"
+  },
+  {
+    "name": "Carmine Stefano Community Centre",
+    "address": "3100 Weston Rd",
+    "district": "Etobicoke York",
+    "ward": "Humber River-Black Creek",
+    "phone": "416-395-6127",
+    "isFree": false,
+    "community_center_id": "C350",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=350"
   },
   {
     "name": "Thistletown Multi-Service Centre",
@@ -180,6 +320,26 @@
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=354"
   },
   {
+    "name": "West Acres Seniors Centre",
+    "address": "65 Hinton Rd",
+    "district": "Etobicoke York",
+    "ward": "Etobicoke North",
+    "phone": "416-394-8680",
+    "isFree": false,
+    "community_center_id": "C396",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=396"
+  },
+  {
+    "name": "Milliken Park Community Recreation Centre",
+    "address": "4325 Mccowan Rd",
+    "district": "Scarborough",
+    "ward": "Scarborough North",
+    "phone": "416-396-7757",
+    "isFree": false,
+    "community_center_id": "C405",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=405"
+  },
+  {
     "name": "Wellesley Community Centre",
     "address": "495 Sherbourne St",
     "district": "Toronto and East York",
@@ -190,6 +350,16 @@
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=451"
   },
   {
+    "name": "Amesbury Community Centre",
+    "address": "1507 Lawrence Ave W",
+    "district": "Etobicoke York",
+    "ward": "York South-Weston",
+    "phone": "416-395-0145",
+    "isFree": false,
+    "community_center_id": "C472",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=472"
+  },
+  {
     "name": "The New Generation Youth Recreation Centre",
     "address": "2694 Eglinton Ave. W",
     "district": "Etobicoke York",
@@ -198,6 +368,16 @@
     "isFree": false,
     "community_center_id": "C474",
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=474"
+  },
+  {
+    "name": "Fairbank Memorial Community Centre",
+    "address": "2213 Dufferin St",
+    "district": "Toronto and East York",
+    "ward": "Toronto-St. Paul’s",
+    "phone": "416-394-2473",
+    "isFree": false,
+    "community_center_id": "C482",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=482"
   },
   {
     "name": "Ancaster Community Centre",
@@ -218,6 +398,16 @@
     "isFree": false,
     "community_center_id": "C499",
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=499"
+  },
+  {
+    "name": "Armour Heights Community Centre",
+    "address": "2140 Avenue Rd",
+    "district": "North York",
+    "ward": "Eglinton-Lawrence",
+    "phone": "416-395-7848",
+    "isFree": false,
+    "community_center_id": "C503",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=503"
   },
   {
     "name": "Birchmount Community Centre",
@@ -258,6 +448,16 @@
     "isFree": true,
     "community_center_id": "C633",
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=633"
+  },
+  {
+    "name": "Glen Long Community Centre",
+    "address": "35 Glen Long Ave",
+    "district": "North York",
+    "ward": "Eglinton-Lawrence",
+    "phone": "416-395-7921",
+    "isFree": false,
+    "community_center_id": "C638",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=638"
   },
   {
     "name": "Gord and Irene Risk Community Recreation Centre",
@@ -310,6 +510,16 @@
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=693"
   },
   {
+    "name": "Northwood Community Centre",
+    "address": "15 Clubhouse Crt",
+    "district": "Etobicoke York",
+    "ward": "Humber River-Black Creek",
+    "phone": "416-395-7284",
+    "isFree": false,
+    "community_center_id": "C703",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=703"
+  },
+  {
     "name": "Don Montgomery Community Recreation Centre",
     "address": "2467 Eglinton Ave E",
     "district": "Scarborough",
@@ -318,6 +528,16 @@
     "isFree": true,
     "community_center_id": "C712",
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=712"
+  },
+  {
+    "name": "Oriole Community Recreation Centre",
+    "address": "2975 Don Mills Rd. W",
+    "district": "North York",
+    "ward": "Don Valley North",
+    "phone": "416-395-6005",
+    "isFree": true,
+    "community_center_id": "C714",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=714"
   },
   {
     "name": "Oakridge Community Recreation Centre",
@@ -340,6 +560,26 @@
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=743"
   },
   {
+    "name": "Roding Community Centre",
+    "address": "600 Roding St",
+    "district": "North York",
+    "ward": "York Centre",
+    "phone": "416-395-7964",
+    "isFree": false,
+    "community_center_id": "C744",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=744"
+  },
+  {
+    "name": "North Kipling Community Centre",
+    "address": "2 Rowntree Rd",
+    "district": "Etobicoke York",
+    "ward": "Etobicoke North",
+    "phone": "416-394-8679",
+    "isFree": true,
+    "community_center_id": "C749",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=749"
+  },
+  {
     "name": "Elmbank Community Centre",
     "address": "10 Rampart Rd",
     "district": "Etobicoke York",
@@ -360,6 +600,46 @@
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=751"
   },
   {
+    "name": "Domenico DiLuca Community Recreation Centre",
+    "address": "25 Stanley Rd",
+    "district": "Etobicoke York",
+    "ward": "Humber River-Black Creek",
+    "phone": "416 395-6673",
+    "isFree": false,
+    "community_center_id": "C760",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=760"
+  },
+  {
+    "name": "Victoria Village Recreation Centre and Arena",
+    "address": "190 Bermondsey Rd",
+    "district": "North York",
+    "ward": "Don Valley East",
+    "phone": "416-395-0143",
+    "isFree": false,
+    "community_center_id": "C771",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=771"
+  },
+  {
+    "name": "Oakdale Community Centre",
+    "address": "350 Grandravine Dr",
+    "district": "Etobicoke York",
+    "ward": "Humber River-Black Creek",
+    "phone": "416-395-0484",
+    "isFree": true,
+    "community_center_id": "C780",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=780"
+  },
+  {
+    "name": "L'Amoreaux Community Recreation Centre",
+    "address": "2000 Mcnicoll Ave",
+    "district": "Scarborough",
+    "ward": "Scarborough-Agincourt",
+    "phone": "416-396-4510",
+    "isFree": true,
+    "community_center_id": "C788",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=788"
+  },
+  {
     "name": "Ourland Community Centre",
     "address": "18 Ourland Ave",
     "district": "Etobicoke York",
@@ -368,6 +648,16 @@
     "isFree": false,
     "community_center_id": "C793",
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=793"
+  },
+  {
+    "name": "The Elms Community School and Pool",
+    "address": "45 Golfdown Dr.",
+    "district": "Etobicoke York",
+    "ward": "Etobicoke North",
+    "phone": "416-394-8983",
+    "isFree": true,
+    "community_center_id": "C795",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=795"
   },
   {
     "name": "Fairfield Seniors' Centre",
@@ -380,6 +670,16 @@
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=822"
   },
   {
+    "name": "Port Union Community Recreation Centre",
+    "address": "5450 Lawrence Ave E",
+    "district": "Scarborough",
+    "ward": "Scarborough-Rouge Park",
+    "phone": "416-396-4031",
+    "isFree": false,
+    "community_center_id": "C883",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=883"
+  },
+  {
     "name": "Etobicoke Olympium",
     "address": "590 Rathburn Rd",
     "district": "Etobicoke York",
@@ -390,12 +690,32 @@
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=892"
   },
   {
+    "name": "Barbara Frum Recreation Centre",
+    "address": "20 Covington Rd",
+    "district": "North York",
+    "ward": "Eglinton-Lawrence",
+    "phone": "416-395-6123",
+    "isFree": false,
+    "community_center_id": "C1045",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1045"
+  },
+  {
+    "name": "Dennis R. Timbrell Resource Centre",
+    "address": "29 St Dennis Dr",
+    "district": "North York",
+    "ward": "Don Valley East",
+    "phone": "416-395-7972",
+    "isFree": true,
+    "community_center_id": "C1056",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1056"
+  },
+  {
     "name": "Falstaff Community Recreation Centre",
     "address": "50 Falstaff Ave",
     "district": "Etobicoke York",
     "ward": "York South-Weston",
     "phone": "416-395-1199",
-    "isFree": false,
+    "isFree": true,
     "community_center_id": "C1063",
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1063"
   },
@@ -405,9 +725,29 @@
     "district": "North York",
     "ward": "Don Valley West",
     "phone": "416-396-2874",
-    "isFree": false,
+    "isFree": true,
     "community_center_id": "C1076",
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1076"
+  },
+  {
+    "name": "Ken Cox Community Centre",
+    "address": "28 Colonel Samuel Smith Park Dr",
+    "district": "Etobicoke York",
+    "ward": "Etobicoke-Lakeshore",
+    "phone": "416-392-6355",
+    "isFree": false,
+    "community_center_id": "C1078",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1078"
+  },
+  {
+    "name": "O'Connor Community Centre",
+    "address": "1386 Victoria Park Ave",
+    "district": "Toronto and East York",
+    "ward": "Beaches-East York",
+    "phone": "416-395-7957",
+    "isFree": true,
+    "community_center_id": "C1093",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1093"
   },
   {
     "name": "Stephen Leacock Community Recreation Centre",
@@ -415,9 +755,59 @@
     "district": "Scarborough",
     "ward": "Scarborough-Agincourt",
     "phone": "416-396-4184",
-    "isFree": false,
+    "isFree": true,
     "community_center_id": "C1105",
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1105"
+  },
+  {
+    "name": "Hollycrest Community School",
+    "address": "630 Renforth Dr",
+    "district": "Etobicoke York",
+    "ward": "Etobicoke Centre",
+    "phone": "416-394-8703",
+    "isFree": false,
+    "community_center_id": "C1221",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1221"
+  },
+  {
+    "name": "James S. Bell Community School",
+    "address": "90 Thirty First St",
+    "district": "Etobicoke York",
+    "ward": "Etobicoke-Lakeshore",
+    "phone": "416-394-8707",
+    "isFree": false,
+    "community_center_id": "C1234",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1234"
+  },
+  {
+    "name": "John G. Althouse Community School",
+    "address": "130 Lloyd Manor Rd",
+    "district": "Etobicoke York",
+    "ward": "Etobicoke Centre",
+    "phone": "416-394-8709",
+    "isFree": false,
+    "community_center_id": "C1237",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1237"
+  },
+  {
+    "name": "Park Lawn Community School",
+    "address": "71 Ballacaine Dr",
+    "district": "Etobicoke York",
+    "ward": "Etobicoke-Lakeshore",
+    "phone": "416-394-8713",
+    "isFree": false,
+    "community_center_id": "C1288",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1288"
+  },
+  {
+    "name": "Smithfield Community School",
+    "address": "175 Mount Olive Dr",
+    "district": "Etobicoke York",
+    "ward": "Etobicoke North",
+    "phone": "416-394-8715",
+    "isFree": false,
+    "community_center_id": "C1320",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=1320"
   },
   {
     "name": "Edithvale Community Centre",
@@ -460,12 +850,22 @@
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=2791"
   },
   {
+    "name": "York Recreation Centre",
+    "address": "115 Black Creek Dr",
+    "district": "Etobicoke York",
+    "ward": "York South-Weston",
+    "phone": "416-392-9675",
+    "isFree": true,
+    "community_center_id": "C3501",
+    "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3501"
+  },
+  {
     "name": "Regent Park Community Centre",
     "address": "402 Shuter St",
     "district": "Toronto and East York",
     "ward": "Toronto Centre",
     "phone": "416-392-5490",
-    "isFree": false,
+    "isFree": true,
     "community_center_id": "C3502",
     "website": "https://www.toronto.ca/explore-enjoy/parks-recreation/places-spaces/parks-and-recreation-facilities/location/?id=3502"
   },
