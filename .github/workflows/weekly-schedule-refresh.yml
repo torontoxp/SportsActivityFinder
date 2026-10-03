@@ -9,7 +9,7 @@ on:
   workflow_dispatch: # Allow manual trigger from GitHub UI
 
 env:
-  SCRIPTS_DIR: frontend/SportsActivityFinder/backend/scripts
+  SCRIPTS_DIR: backend/scripts
   AWS_DEFAULT_REGION: ca-central-1
 
 jobs:
