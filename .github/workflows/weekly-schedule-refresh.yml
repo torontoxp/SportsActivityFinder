@@ -32,11 +32,11 @@ jobs:
       - name: Fetch schedules
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         working-directory: ${{ env.SCRIPTS_DIR }}
         run: |
-          echo "::group::Fetch schedules (Gemini)"
-          python fetch_schedules.py --llm-provider gemini
+          echo "::group::Fetch schedules"
+          python fetch_schedules.py
           echo "::endgroup::"
 
       - name: Seed DynamoDB
