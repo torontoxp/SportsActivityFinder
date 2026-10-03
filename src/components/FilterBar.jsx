@@ -13,20 +13,36 @@ export default function FilterBar({
   isDistanceSortActive = false,
   onToggleDistanceSort,
   locationLoading = false,
+  isNowSortActive = false,
+  onToggleNowSort,
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const { availableDays, availableAges, availableTags, availableCentres } = useMemo(() => {
-    const dSet = new Set(), aSet = new Set(), tSet = new Set(), cMap = new Map();
+  const { availableDays, availableTags, availableCentres } = useMemo(() => {
+    const dSet = new Set(), tSet = new Set(), cMap = new Map();
     schedules.forEach(s => {
       if (s.day_of_week) dSet.add(s.day_of_week);
-      if (s.age_group) aSet.add(s.age_group);
       if (s.tags) s.tags.forEach(t => tSet.add(t));
       if (s.name && s.community_center_id) cMap.set(s.community_center_id, s.name);
     });
+
+    const today = new Date();
+    // Calculate Monday of the current week (assuming week starts on Monday)
+    const dayOfWeek = today.getDay();
+    const diffToMonday = dayOfWeek === 0 ? 6 : dayOfWeek - 1;
+    const monday = new Date(today);
+    monday.setDate(today.getDate() - diffToMonday);
+
+    const jsDayMap = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+    const dayOrder = {};
+    for (let i = 0; i < 7; i++) {
+      const d = new Date(monday);
+      d.setDate(monday.getDate() + i);
+      dayOrder[jsDayMap[d.getDay()]] = { index: i, date: d.getDate() };
+    }
+
     return {
-      availableDays: SORTED_DAYS.filter(d => dSet.has(d)),
-      availableAges: Array.from(aSet).sort(),
+      availableDays: Object.keys(dayOrder).filter(d => dSet.has(d)).sort((a, b) => dayOrder[a].index - dayOrder[b].index).map(d => ({ day: d, date: dayOrder[d].date })),
       availableTags: Array.from(tSet).sort(),
       availableCentres: Array.from(cMap.entries()).map(([id, name]) => ({ id, name })).sort((a, b) => a.name.localeCompare(b.name))
     };
@@ -80,16 +96,17 @@ export default function FilterBar({
   };
 
   const clearAll = () => {
-    onChange({ days: [], ageGroups: [], costs: [], tags: [], centres: [] });
+    onChange({ days: [], ageRange: [0, 99], costs: [], tags: [], centres: [], centreSearchText: "" });
     setCentreSearch("");
   };
 
   const hasFilters =
     filters.days.length > 0 ||
-    filters.ageGroups.length > 0 ||
+    (filters.ageRange && (filters.ageRange[0] !== 0 || filters.ageRange[1] !== 99)) ||
     filters.costs.length > 0 ||
     (filters.tags && filters.tags.length > 0) ||
-    (filters.centres && filters.centres.length > 0);
+    (filters.centres && filters.centres.length > 0) ||
+    (filters.centreSearchText && filters.centreSearchText.trim() !== "");
 
   const filteredCentres = availableCentres.filter(c =>
     c.name.toLowerCase().includes(centreSearch.toLowerCase())
@@ -143,42 +160,67 @@ export default function FilterBar({
         <div className={`filter-groups ${isExpanded ? "expanded" : "collapsed"}`}>
           {/* Day of Week */}
           <div className="filter-group">
-            <span className="filter-group-label">Day(s)</span>
-            <div className="filter-pills" role="group" aria-label="Filter by day">
-              {availableDays.map((d) => (
-                <button
-                  key={d}
-                  id={`filter-day-${d}`}
-                  className={`filter-pill ${filters.days.includes(d) ? "active" : ""}`}
-                  onClick={() => toggle("days", d)}
-                  aria-pressed={filters.days.includes(d)}
-                >
-                  {DAY_LABELS[d]}
-                </button>
+            <span className="filter-group-label" style={{ marginRight: '4px' }}>Day(s)</span>
+            <div className="filter-pills" role="group" aria-label="Filter by day" style={{ gap: '10px' }}>
+              {availableDays.map(({ day, date }) => (
+                <div key={day} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
+                  <span style={{ fontSize: '0.72rem', color: 'var(--text-medium)', fontWeight: 600 }}>{DAY_LABELS[day]}</span>
+                  <button
+                    id={`filter-day-${day}`}
+                    className={`filter-pill ${filters.days.includes(day) ? "active" : ""}`}
+                    onClick={() => toggle("days", day)}
+                    aria-pressed={filters.days.includes(day)}
+                    style={{ padding: '4px 10px', minWidth: '36px', textAlign: 'center', borderRadius: '8px' }}
+                  >
+                    {date}
+                  </button>
+                </div>
               ))}
             </div>
           </div>
 
           {/* Age Group */}
           <div className="filter-group">
-            <span className="filter-group-label">Age Group</span>
-            <div className="filter-pills" role="group" aria-label="Filter by age group">
-              {availableAges.map((g) => (
-                <button
-                  key={g}
-                  id={`filter-age-${g.replace(/\s+/g, "-")}`}
-                  className={`filter-pill ${filters.ageGroups.includes(g) ? "active" : ""}`}
-                  onClick={() => toggle("ageGroups", g)}
-                  aria-pressed={filters.ageGroups.includes(g)}
-                >
-                  {g}
-                </button>
-              ))}
+            <span className="filter-group-label">Age Range</span>
+            <div className="multi-range-slider-wrap">
+              <div className="multi-range-labels">
+                <span>{filters.ageRange ? filters.ageRange[0] : 0} yrs</span>
+                <span>{filters.ageRange && filters.ageRange[1] === 99 ? '99+ yrs' : `${filters.ageRange ? filters.ageRange[1] : 99} yrs`}</span>
+              </div>
+              <div className="multi-range-slider">
+                <div className="slider-track"></div>
+                <div className="slider-range" style={{
+                  left: `${((filters.ageRange ? filters.ageRange[0] : 0) / 99) * 100}%`,
+                  right: `${100 - ((filters.ageRange ? filters.ageRange[1] : 99) / 99) * 100}%`
+                }}></div>
+                <input
+                  type="range"
+                  min="0"
+                  max="99"
+                  value={filters.ageRange ? filters.ageRange[0] : 0}
+                  onChange={(e) => {
+                    const val = Math.min(Number(e.target.value), (filters.ageRange ? filters.ageRange[1] : 99) - 1);
+                    onChange({ ...filters, ageRange: [val, filters.ageRange ? filters.ageRange[1] : 99] });
+                  }}
+                  aria-label="Minimum age"
+                />
+                <input
+                  type="range"
+                  min="0"
+                  max="99"
+                  value={filters.ageRange ? filters.ageRange[1] : 99}
+                  onChange={(e) => {
+                    const val = Math.max(Number(e.target.value), (filters.ageRange ? filters.ageRange[0] : 0) + 1);
+                    onChange({ ...filters, ageRange: [filters.ageRange ? filters.ageRange[0] : 0, val] });
+                  }}
+                  aria-label="Maximum age"
+                />
+              </div>
             </div>
           </div>
 
-          {/* Community Centre(s) */}
-          <div className="filter-group" ref={centreDropdownRef}>
+          {/* Community Centre(s) - Hidden for now */}
+          {/* <div className="filter-group" ref={centreDropdownRef}>
             <span className="filter-group-label">Community Centre(s)</span>
             <div className="centre-dropdown-wrapper">
               <button
@@ -228,7 +270,7 @@ export default function FilterBar({
                 </div>
               )}
             </div>
-          </div>
+          </div> */}
 
           {/* Cost */}
           <div className="filter-group">
@@ -267,6 +309,38 @@ export default function FilterBar({
               </div>
             </div>
           )}
+        </div>
+
+        {/* Row 3: Always visible global text search for centres and Now button */}
+        <div className="filter-global-search" style={{ marginTop: isExpanded ? "12px" : "12px", display: 'flex', gap: '8px' }}>
+          <div className="filter-search-input-wrapper" style={{ position: "relative", flex: 1 }}>
+            <span style={{ position: "absolute", left: "12px", top: "50%", transform: "translateY(-50%)", opacity: 0.5, pointerEvents: "none" }}>
+              🔍
+            </span>
+            <input
+              type="text"
+              placeholder="Search by community centre name..."
+              value={filters.centreSearchText || ""}
+              onChange={(e) => onChange({ ...filters, centreSearchText: e.target.value })}
+              className="centre-search-input"
+              style={{ width: "100%", padding: "9px 12px 9px 36px", fontSize: "0.85rem", background: "var(--surface)", border: "1.5px solid var(--border)", borderRadius: "8px", boxSizing: "border-box" }}
+              aria-label="Search by community centre name"
+            />
+          </div>
+          <button
+            type="button"
+            className={`filter-sort-btn ${isNowSortActive ? "active" : ""}`}
+            onClick={(e) => {
+              e.stopPropagation();
+              onToggleNowSort && onToggleNowSort();
+            }}
+            aria-label="Sort by upcoming time"
+            title="Sort by soonest upcoming activities"
+            style={{ borderRadius: '8px', padding: '0 16px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: 0 }}
+          >
+            <span>⏰</span>
+            <span style={{ marginLeft: '4px' }}>NOW</span>
+          </button>
         </div>
       </div>
     </div>

@@ -35,7 +35,52 @@ function formatDistance(distKm) {
   return `${distKm.toFixed(1)} km away`;
 }
 
-export default function ScheduleTable({ schedules, userLocation, isDistanceSortActive }) {
+function getScheduleStatus(dayStr, slotStr) {
+  if (!dayStr || !slotStr) return { isPast: false, isCurrent: false, upcomingMinutes: Infinity };
+  const dayMap = { SUN: 0, MON: 1, TUE: 2, WED: 3, THU: 4, FRI: 5, SAT: 6 };
+  const targetDay = dayMap[dayStr.toUpperCase()];
+  if (targetDay === undefined) return { isPast: false, isCurrent: false, upcomingMinutes: Infinity };
+  
+  const today = new Date();
+  const currentDay = today.getDay();
+  const currentTotal = today.getHours() * 60 + today.getMinutes();
+
+  const [startStr, endStr] = slotStr.split('-');
+  
+  function parseTime(timeStr) {
+    if (!timeStr) return 0;
+    const match = timeStr.match(/(\d+)(?::(\d+))?\s*(AM|PM)/i);
+    if (!match) return 0;
+    let h = parseInt(match[1], 10);
+    const m = match[2] ? parseInt(match[2], 10) : 0;
+    const ampm = match[3].toUpperCase();
+    if (ampm === "PM" && h < 12) h += 12;
+    if (ampm === "AM" && h === 12) h = 0;
+    return h * 60 + m;
+  }
+  
+  const startTotal = parseTime(startStr);
+  const endTotal = parseTime(endStr) || (startTotal + 60);
+  
+  let daysDiff = targetDay - currentDay;
+  let isPast = false;
+  let isCurrent = false;
+
+  if (daysDiff < 0) {
+    isPast = true;
+  } else if (daysDiff === 0) {
+    if (currentTotal > endTotal) {
+      isPast = true;
+    } else if (currentTotal >= startTotal && currentTotal <= endTotal) {
+      isCurrent = true;
+    }
+  }
+  
+  const upcomingMinutes = daysDiff * 24 * 60 + startTotal - currentTotal;
+  return { isPast, isCurrent, upcomingMinutes };
+}
+
+export default function ScheduleTable({ schedules, userLocation, isDistanceSortActive, isNowSortActive }) {
   if (schedules.length === 0) {
     return (
       <div className="empty-state">
@@ -47,12 +92,33 @@ export default function ScheduleTable({ schedules, userLocation, isDistanceSortA
   }
 
   const sorted = useMemo(() => {
-    const list = schedules.map((row) => ({
-      ...row,
-      distance: getScheduleDistance(row, userLocation),
-    }));
+    let list = schedules.map((row) => {
+      let bestStatus = { isPast: true, isCurrent: false, upcomingMinutes: Infinity };
+      if (isNowSortActive) {
+        for (let slot of (row.slots || [])) {
+          const status = getScheduleStatus(row.day_of_week, slot);
+          if (!status.isPast) {
+            if (status.upcomingMinutes < bestStatus.upcomingMinutes) {
+              bestStatus = status;
+            }
+          }
+        }
+      }
+      return {
+        ...row,
+        distance: getScheduleDistance(row, userLocation),
+        nowStatus: bestStatus,
+      };
+    });
 
-    if (isDistanceSortActive) {
+    if (isNowSortActive) {
+      list = list.filter(row => !row.nowStatus.isPast);
+      list.sort((a, b) => {
+        if (a.nowStatus.isCurrent && !b.nowStatus.isCurrent) return -1;
+        if (!a.nowStatus.isCurrent && b.nowStatus.isCurrent) return 1;
+        return a.nowStatus.upcomingMinutes - b.nowStatus.upcomingMinutes;
+      });
+    } else if (isDistanceSortActive) {
       list.sort((a, b) => {
         if (a.distance != null && b.distance != null) {
           if (a.distance !== b.distance) return a.distance - b.distance;
@@ -65,7 +131,7 @@ export default function ScheduleTable({ schedules, userLocation, isDistanceSortA
     }
 
     return list;
-  }, [schedules, userLocation, isDistanceSortActive]);
+  }, [schedules, userLocation, isDistanceSortActive, isNowSortActive]);
 
   return (
     <div className="schedule-table-wrap">
@@ -101,7 +167,7 @@ export default function ScheduleTable({ schedules, userLocation, isDistanceSortA
                     >
                       {row.name}
                     </a>
-                    {isDistanceSortActive && row.distance != null && (
+                    {(isDistanceSortActive || isNowSortActive) && row.distance != null && (
                       <span className="distance-badge" title={`${row.distance.toFixed(2)} km from your location`}>
                         📍 {formatDistance(row.distance)}
                       </span>

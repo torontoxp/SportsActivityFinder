@@ -1,6 +1,6 @@
 # 🏅 Toronto Sports Activity Finder
 
-A web app that helps residents discover **free and affordable drop-in sports activities** at City of Toronto community centres — all in one place.
+A Progressive Web App (PWA) that helps residents discover **free and affordable drop-in sports activities** at City of Toronto community centres — all in one place.
 
 ---
 

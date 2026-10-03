@@ -39,11 +39,24 @@ const SPORT_ICONS = {
 
 const DEFAULT_FILTERS = {
   days: [],
-  ageGroups: [],
+  ageRange: [0, 99],
   costs: [],
   tags: [],
   centres: [],
+  centreSearchText: "",
 };
+
+function parseAgeStr(ageStr) {
+  if (!ageStr) return { min: 0, max: 99 };
+  if (ageStr.includes('-')) {
+    const parts = ageStr.split('-');
+    return { min: parseInt(parts[0], 10) || 0, max: parseInt(parts[1], 10) || 99 };
+  }
+  if (ageStr.includes('+')) {
+    return { min: parseInt(ageStr.replace('+', ''), 10) || 0, max: 99 };
+  }
+  return { min: 0, max: 99 };
+}
 
 export default function SportResultsPage() {
   const { sportName } = useParams();
@@ -58,6 +71,9 @@ export default function SportResultsPage() {
   const [isDistanceSortActive, setIsDistanceSortActive] = useState(false);
   const [locationLoading, setLocationLoading] = useState(false);
   const [locationError, setLocationError] = useState(null);
+
+  // Now Sort State
+  const [isNowSortActive, setIsNowSortActive] = useState(false);
 
   // Resolve icon from local map
   const icon = SPORT_ICONS[sport] ?? "🏅";
@@ -96,6 +112,8 @@ export default function SportResultsPage() {
       setLocationError(null);
       return;
     }
+
+    setIsNowSortActive(false); // disable Now sort if Distance sort is activated
 
     if (userLocation) {
       setIsDistanceSortActive(true);
@@ -163,11 +181,76 @@ export default function SportResultsPage() {
     navigator.geolocation.getCurrentPosition(geoSuccess, geoError, options);
   };
 
+  const handleToggleNowSort = () => {
+    if (!isNowSortActive) {
+      setIsDistanceSortActive(false); // disable Distance sort if Now sort is activated
+      setFilters(prev => ({ ...prev, days: [] })); // Reset days selection filter
+      trackTelemetryDeckEvent("sort_by_now_enabled");
+      goatCounterEvent("sort_by_now_enabled", true);
+      simpleAnalyticsEvent("sort_by_now_enabled");
+      
+      // Silently request location to show distance
+      if (!userLocation && navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (pos) => {
+            setUserLocation({ lat: pos.coords.latitude, lng: pos.coords.longitude });
+          },
+          () => {
+            // Ignore error, just skip distance
+          },
+          { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 }
+        );
+      }
+    }
+    setIsNowSortActive(!isNowSortActive);
+  };
+
   // ── Client-side filtering ────────────────────────────────────────────────
   const filtered = useMemo(() => {
+    const DAY_MAP = { SUN: 0, MON: 1, TUE: 2, WED: 3, THU: 4, FRI: 5, SAT: 6 };
+
+    function parseTimeToMinutes(timeStr) {
+      if (!timeStr) return 0;
+      const match = timeStr.match(/(\d+)(?::(\d+))?\s*(AM|PM)/i);
+      if (!match) return 0;
+      let h = parseInt(match[1], 10);
+      const m = match[2] ? parseInt(match[2], 10) : 0;
+      const ampm = match[3].toUpperCase();
+      if (ampm === "PM" && h < 12) h += 12;
+      if (ampm === "AM" && h === 12) h = 0;
+      return h * 60 + m;
+    }
+
+    function isScheduleActiveOrUpcoming(row) {
+      const today = new Date();
+      const currentDay = today.getDay();
+      const currentTotal = today.getHours() * 60 + today.getMinutes();
+      const targetDay = DAY_MAP[row.day_of_week?.toUpperCase()];
+      if (targetDay === undefined) return true;
+
+      const daysDiff = targetDay - currentDay;
+      if (daysDiff > 0) return true;   // future day this week
+      if (daysDiff < 0) return false;   // past day this week
+
+      // Same day — check if any slot hasn't ended yet
+      for (const slot of (row.slots || [])) {
+        const [, endStr] = slot.split('-');
+        const endTotal = parseTimeToMinutes(endStr) || 1440;
+        if (currentTotal <= endTotal) return true;
+      }
+      return false;
+    }
+
     return schedules.filter((row) => {
       if (filters.days.length > 0 && !filters.days.includes(row.day_of_week)) return false;
-      if (filters.ageGroups.length > 0 && !filters.ageGroups.includes(row.age_group)) return false;
+      if (filters.ageRange) {
+        const { min: schedMin, max: schedMax } = parseAgeStr(row.age_group);
+        const userMin = filters.ageRange[0];
+        const userMax = filters.ageRange[1];
+        if (schedMin > userMax || schedMax < userMin) {
+          return false;
+        }
+      }
       if (filters.costs.length > 0) {
         const costStr = row.isFree ? "Free" : "Paid";
         if (!filters.costs.includes(costStr)) return false;
@@ -179,9 +262,25 @@ export default function SportResultsPage() {
       if (filters.centres && filters.centres.length > 0) {
         if (!filters.centres.includes(row.community_center_id)) return false;
       }
+      if (filters.centreSearchText) {
+        if (!row.name || !row.name.toLowerCase().includes(filters.centreSearchText.toLowerCase())) {
+          return false;
+        }
+      }
+      // When Now is active, hide past activities
+      if (isNowSortActive && !isScheduleActiveOrUpcoming(row)) {
+        return false;
+      }
       return true;
     });
-  }, [schedules, filters]);
+  }, [schedules, filters, isNowSortActive]);
+
+  const handleFilterChange = (newFilters) => {
+    setFilters(newFilters);
+    if (isNowSortActive) {
+      setIsNowSortActive(false);
+    }
+  };
 
   return (
     <div className="results-page">
@@ -215,12 +314,14 @@ export default function SportResultsPage() {
       {!loading && (
         <FilterBar
           filters={filters}
-          onChange={setFilters}
+          onChange={handleFilterChange}
           resultCount={filtered.length}
           schedules={schedules}
           isDistanceSortActive={isDistanceSortActive}
           onToggleDistanceSort={handleToggleDistanceSort}
           locationLoading={locationLoading}
+          isNowSortActive={isNowSortActive}
+          onToggleNowSort={handleToggleNowSort}
         />
       )}
 
@@ -250,6 +351,7 @@ export default function SportResultsPage() {
             schedules={filtered}
             userLocation={userLocation}
             isDistanceSortActive={isDistanceSortActive}
+            isNowSortActive={isNowSortActive}
           />
         )}
       </div>

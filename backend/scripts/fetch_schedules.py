@@ -96,8 +96,15 @@ HEADERS = {
     "Accept": "application/json, text/plain, */*",
 }
 
-# Gemini API key — replace with your actual key.
-GEMINI_API_KEY = "AIzaSyBUi0EcVAfKowLnFPFSz5TyX73cn4o34K4"
+# LLM API keys (can also be supplied via environment variables)
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+NVIDIA_API_KEY = os.environ.get("NVIDIA_API_KEY", "")
+COHERE_API_KEY = os.environ.get("COHERE_API_KEY", "")
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
+HUGGINGFACE_API_KEY = os.environ.get("HUGGINGFACE_API_KEY", "")
+XAI_API_KEY = os.environ.get("XAI_API_KEY", "")
+MISTRAL_API_KEY = os.environ.get("MISTRAL_API_KEY", "")
 
 # Canonical sport names. Entries whose sport field does NOT exactly match
 # one of these will be sent to Gemini for normalization.
@@ -125,7 +132,7 @@ VALID_SPORTS = [
 #
 # To disable the free-admission flag entirely (default), leave the set empty.
 # ---------------------------------------------------------------------------
-FREE_CENTER_IDS: set = {42, 58, 63, 89, 325, 451, 486, 575, 633, 647, 675, 702, 712, 714, 731, 743, 749, 750, 780, 788, 795}
+FREE_CENTER_IDS: set = {486, 575, 750, 1186, 1063, 1236, 1232, 1244, 749, 780, 795, 3501, 42, 1056, 647, 1076, 675, 714, 600, 537, 712, 633, 788, 702, 731, 743, 1105, 1873, 45, 58, 63, 89, 1093, 2012, 3502, 1098, 325, 451}
 
 # ---------------------------------------------------------------------------
 # MASTER LIST — every Toronto facility ID we track.
@@ -509,23 +516,16 @@ def normalize_age(age: str) -> str:
     return age
 
 
-# ----- Gemini sport normalization -----------------------------------------
+# ----- LLM sport normalization (shared helpers) --------------------------
 
-def normalize_sports_with_gemini(entries: list[dict]) -> list[dict]:
-    """Send schedule entries with non-standard sport names to Gemini 2.5 Flash
-    for normalization.
+import time
 
-    Gemini maps each entry's `sport` field to one of the VALID_SPORTS and
-    populates `tags` with contextual qualifiers (e.g. "Family", "Women",
-    "2SLGBTQ+").
 
-    Returns the entries list with updated `sport` and `tags` fields.
-    """
-    if not entries:
-        return entries
 
+def build_normalization_prompt() -> str:
+    """Return the system prompt shared by all LLM normalization providers."""
     valid_sports_str = json.dumps(VALID_SPORTS)
-    prompt = f"""You are a data normalization assistant. I have a list of sports activity schedule entries in JSON format. Each entry has a "sport" field that may contain a non-standard sport name.
+    return f"""You are a data normalization assistant. I have a list of sports activity schedule entries in JSON format. Each entry has a "sport" field that may contain a non-standard sport name.
 
 Your task:
 1. Map each entry's "sport" field to the closest match from this canonical list: {valid_sports_str}
@@ -542,18 +542,71 @@ Examples:
 - "Parasport: Wheelchair Basketball" → sport: "Basketball", tags: ["Parasport: Wheelchair"]
 - "Open Gym with Caregiver" → sport: "Open Gym", tags: ["Caregiver"]
 
-Return ONLY a valid JSON array containing the updated entries. Do not include any markdown formatting, code fences, or explanation. Just the raw JSON array.
+Return ONLY a valid JSON array containing the updated entries. Do not include any markdown formatting, code fences, or explanation. Just the raw JSON array."""
 
-Here are the entries to normalize:
-{json.dumps(entries, indent=2)}"""
 
+def parse_normalized_json_response(text: str) -> list[dict]:
+    """Parse an LLM response into a list of schedule dicts.
+
+    Strips markdown code-fences if present. Handles dictionary wrappers
+    (e.g. {"entries": [...]}). Ensures all elements are dicts.
+    Raises ValueError when the response cannot be parsed into a JSON list of dicts.
+    """
+    text = text.strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:json)?\s*", "", text)
+        text = re.sub(r"\s*```$", "", text)
+    parsed = json.loads(text)
+
+    if isinstance(parsed, dict):
+        for key in ("entries", "results", "data", "schedules", "items", "normalized_entries", "sports"):
+            if isinstance(parsed.get(key), list):
+                parsed = parsed[key]
+                break
+        else:
+            raise ValueError(f"LLM returned a dict without a recognized array key: {list(parsed.keys())}")
+
+    if not isinstance(parsed, list):
+        raise ValueError(f"Expected JSON array, got {type(parsed).__name__}")
+
+    for i, item in enumerate(parsed):
+        if not isinstance(item, dict):
+            raise ValueError(f"Expected list element {i} to be a dict, got {type(item).__name__}: {item!r}")
+
+    return parsed
+
+
+# ----- Gemini sport normalization -----------------------------------------
+
+def normalize_sports_with_gemini(entries: list[dict], raise_on_failure: bool = False) -> list[dict]:
+    """Send schedule entries with non-standard sport names to Gemini Flash
+    for normalization.
+
+    Gemini maps each entry's `sport` field to one of the VALID_SPORTS and
+    populates `tags` with contextual qualifiers (e.g. "Family", "Women",
+    "2SLGBTQ+").
+
+    Returns the entries list with updated `sport` and `tags` fields.
+    """
+    if not entries:
+        return entries
+    if not GEMINI_API_KEY:
+        log("  ERROR: GEMINI_API_KEY is not set.")
+        if raise_on_failure:
+            raise RuntimeError("GEMINI_API_KEY is not set")
+        return entries
+
+    prompt = build_normalization_prompt()
     api_url = (
         f"https://generativelanguage.googleapis.com/v1beta/models/"
-        f"gemini-3.1-flash-lite:generateContent?key={GEMINI_API_KEY}"
+        f"gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}"
     )
+
+    log(f"  Calling Gemini Flash to normalize {len(entries)} entries...")
+
     request_body = json.dumps({
         "contents": [{
-            "parts": [{"text": prompt}]
+            "parts": [{"text": prompt + f"\n\nHere are the entries to normalize:\n{json.dumps(entries, indent=2)}"}]
         }],
         "generationConfig": {
             "responseMimeType": "application/json",
@@ -561,40 +614,516 @@ Here are the entries to normalize:
         }
     }).encode("utf-8")
 
-    req = urllib.request.Request(
-        api_url,
-        data=request_body,
-        headers={"Content-Type": "application/json"},
-        method="POST",
-    )
+    for attempt in range(1, 4):
+        req = urllib.request.Request(
+            api_url,
+            data=request_body,
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
 
-    log(f"  Calling Gemini 2.5 Flash to normalize {len(entries)} entries...")
-    try:
-        with urllib.request.urlopen(req, timeout=120) as resp:
-            resp_data = json.loads(resp.read().decode("utf-8"))
+        try:
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                resp_data = json.loads(resp.read().decode("utf-8"))
 
-        # Extract the text from Gemini's response
-        text = resp_data["candidates"][0]["content"]["parts"][0]["text"]
+            text = resp_data["candidates"][0]["content"]["parts"][0]["text"]
+            normalized_entries = parse_normalized_json_response(text)
+            log(f"  Gemini normalized {len(normalized_entries)} entries.")
+            return normalized_entries
 
-        # Parse the JSON array from the response
-        # Strip any markdown code fences if present despite our instructions
-        text = text.strip()
-        if text.startswith("```"):
-            text = re.sub(r"^```(?:json)?\s*", "", text)
-            text = re.sub(r"\s*```$", "", text)
+        except Exception as e:
+            log(f"      Attempt {attempt} failed: {e}")
+            if attempt < 3:
+                sleep_time = 5 * attempt
+                log(f"      Waiting {sleep_time} seconds before retrying...")
+                time.sleep(sleep_time)
 
-        normalized = json.loads(text)
-        if not isinstance(normalized, list):
-            log("  WARNING: Gemini returned non-list; using original entries.")
-            return entries
+    log(f"      ERROR: Failed after 3 attempts.")
+    if raise_on_failure:
+        raise RuntimeError("Gemini normalization failed after 3 attempts")
+    return entries
 
-        log(f"  Gemini normalized {len(normalized)} entries successfully.")
-        return normalized
 
-    except Exception as e:
-        log(f"  ERROR: Gemini normalization failed: {e}")
-        log(f"  Falling back to original (un-normalized) entries.")
+# ----- Claude sport normalization -----------------------------------------
+
+def normalize_sports_with_claude(entries: list[dict]) -> list[dict]:
+    """Send schedule entries with non-standard sport names to Claude (Anthropic)
+    for normalization.
+
+    Uses the Messages API (https://api.anthropic.com/v1/messages).
+    Returns the entries list with updated `sport` and `tags` fields.
+    """
+    if not entries:
         return entries
+    if not ANTHROPIC_API_KEY:
+        log("  ERROR: ANTHROPIC_API_KEY is not set. Falling back to original entries.")
+        return entries
+
+    prompt = build_normalization_prompt()
+    api_url = "https://api.anthropic.com/v1/messages"
+
+    log(f"  Calling Claude to normalize {len(entries)} entries...")
+
+    user_message = prompt + f"\n\nHere are the entries to normalize:\n{json.dumps(entries, indent=2)}"
+
+    request_body = json.dumps({
+        "model": "claude-sonnet-5",
+        "max_tokens": 16384,
+        "messages": [
+            {"role": "user", "content": user_message}
+        ]
+    }).encode("utf-8")
+
+    for attempt in range(1, 4):
+        req = urllib.request.Request(
+            api_url,
+            data=request_body,
+            headers={
+                "Content-Type": "application/json",
+                "x-api-key": ANTHROPIC_API_KEY,
+                "anthropic-version": "2023-06-01",
+            },
+            method="POST",
+        )
+
+        try:
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                resp_data = json.loads(resp.read().decode("utf-8"))
+
+            # Anthropic Messages API: content is a list of blocks
+            text = ""
+            for block in resp_data.get("content", []):
+                if block.get("type") == "text":
+                    text += block.get("text", "")
+
+            normalized_entries = parse_normalized_json_response(text)
+            log(f"  Claude normalized {len(normalized_entries)} entries.")
+            return normalized_entries
+
+        except Exception as e:
+            log(f"      Attempt {attempt} failed: {e}")
+            if attempt < 3:
+                sleep_time = 5 * attempt
+                log(f"      Waiting {sleep_time} seconds before retrying...")
+                time.sleep(sleep_time)
+
+    log(f"      ERROR: Failed after 3 attempts. Falling back to original entries.")
+    return entries
+
+
+# ----- NVIDIA sport normalization -----------------------------------------
+
+def normalize_sports_with_nvidia(entries: list[dict]) -> list[dict]:
+    """Send schedule entries with non-standard sport names to NVIDIA NIM
+    (meta/llama-3.3-70b-instruct) for normalization.
+
+    Uses the Chat Completions API (https://integrate.api.nvidia.com/v1/chat/completions).
+    Returns the entries list with updated `sport` and `tags` fields.
+    """
+    if not entries:
+        return entries
+    if not NVIDIA_API_KEY:
+        log("  ERROR: NVIDIA_API_KEY is not set. Falling back to original entries.")
+        return entries
+
+    prompt = build_normalization_prompt()
+    api_url = "https://integrate.api.nvidia.com/v1/chat/completions"
+
+    log(f"  Calling NVIDIA AI models to normalize {len(entries)} entries...")
+
+    user_message = prompt + f"\n\nHere are the entries to normalize:\n{json.dumps(entries, indent=2)}"
+
+    request_body = json.dumps({
+        "model": "z-ai/glm-5.3-flash",
+        "temperature": 0.2,
+        "top_p": 0.7,
+        "max_tokens": 16384,
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a data normalization assistant. Always respond with valid JSON only."
+            },
+            {"role": "user", "content": user_message}
+        ]
+    }).encode("utf-8")
+
+    for attempt in range(1, 4):
+        req = urllib.request.Request(
+            api_url,
+            data=request_body,
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {NVIDIA_API_KEY}",
+            },
+            method="POST",
+        )
+
+        try:
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                resp_data = json.loads(resp.read().decode("utf-8"))
+
+            text = resp_data["choices"][0]["message"]["content"]
+
+            parsed = parse_normalized_json_response(text)
+            log(f"  NVIDIA normalized {len(parsed)} entries.")
+            return parsed
+
+        except Exception as e:
+            log(f"      Attempt {attempt} failed: {e}")
+            if attempt < 3:
+                sleep_time = 5 * attempt
+                log(f"      Waiting {sleep_time} seconds before retrying...")
+                time.sleep(sleep_time)
+
+    log(f"      ERROR: Failed after 3 attempts. Falling back to original entries.")
+    return entries
+
+
+# ----- Cohere sport normalization -----------------------------------------
+
+def normalize_sports_with_cohere(entries: list[dict]) -> list[dict]:
+    """Send schedule entries with non-standard sport names to Cohere
+    (command-r-plus) for normalization.
+
+    Uses the v2 Chat API (https://api.cohere.com/v2/chat).
+    Returns the entries list with updated `sport` and `tags` fields.
+    """
+    if not entries:
+        return entries
+    if not COHERE_API_KEY:
+        log("  ERROR: COHERE_API_KEY is not set. Falling back to original entries.")
+        return entries
+
+    prompt = build_normalization_prompt()
+    api_url = "https://api.cohere.com/v2/chat"
+
+    log(f"  Calling Cohere to normalize {len(entries)} entries...")
+
+    user_message = prompt + f"\n\nHere are the entries to normalize:\n{json.dumps(entries, indent=2)}"
+
+    request_body = json.dumps({
+        "model": "command-r-plus-08-2024",
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a data normalization assistant. Always respond with valid JSON only."
+            },
+            {"role": "user", "content": user_message}
+        ]
+    }).encode("utf-8")
+
+    for attempt in range(1, 4):
+        req = urllib.request.Request(
+            api_url,
+            data=request_body,
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {COHERE_API_KEY}",
+            },
+            method="POST",
+        )
+
+        try:
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                resp_data = json.loads(resp.read().decode("utf-8"))
+
+            text = ""
+            msg = resp_data.get("message", {})
+            content = msg.get("content", [])
+            if isinstance(content, list):
+                for item in content:
+                    if isinstance(item, dict) and item.get("type") == "text":
+                        text += item.get("text", "")
+            elif isinstance(content, str):
+                text = content
+
+            if not text and "text" in resp_data:
+                text = resp_data["text"]
+
+            parsed = parse_normalized_json_response(text)
+            log(f"  Cohere normalized {len(parsed)} entries.")
+            return parsed
+
+        except Exception as e:
+            log(f"      Attempt {attempt} failed: {e}")
+            if attempt < 3:
+                sleep_time = 5 * attempt
+                log(f"      Waiting {sleep_time} seconds before retrying...")
+                time.sleep(sleep_time)
+
+    log(f"      ERROR: Failed after 3 attempts. Falling back to original entries.")
+    return entries
+
+
+# ----- OpenRouter sport normalization ---------------------------------------
+
+def normalize_sports_with_openrouter(entries: list[dict]) -> list[dict]:
+    """Send schedule entries with non-standard sport names to OpenRouter
+    for normalization.
+
+    Uses the Chat Completions API (https://openrouter.ai/api/v1/chat/completions).
+    Returns the entries list with updated `sport` and `tags` fields.
+    """
+    if not entries:
+        return entries
+    if not OPENROUTER_API_KEY:
+        log("  ERROR: OPENROUTER_API_KEY is not set. Falling back to original entries.")
+        return entries
+
+    prompt = build_normalization_prompt()
+    api_url = "https://openrouter.ai/api/v1/chat/completions"
+
+    log(f"  Calling OpenRouter to normalize {len(entries)} entries...")
+
+    user_message = prompt + f"\n\nHere are the entries to normalize:\n{json.dumps(entries, indent=2)}"
+
+    request_body = json.dumps({
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a data normalization assistant. Always respond with valid JSON only."
+            },
+            {"role": "user", "content": user_message}
+        ]
+    }).encode("utf-8")
+
+    for attempt in range(1, 4):
+        req = urllib.request.Request(
+            api_url,
+            data=request_body,
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+            },
+            method="POST",
+        )
+
+        try:
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                resp_data = json.loads(resp.read().decode("utf-8"))
+
+            text = resp_data["choices"][0]["message"]["content"]
+            parsed = parse_normalized_json_response(text)
+            log(f"  OpenRouter normalized {len(parsed)} entries.")
+            return parsed
+
+        except Exception as e:
+            log(f"      Attempt {attempt} failed: {e}")
+            if attempt < 3:
+                sleep_time = 5 * attempt
+                log(f"      Waiting {sleep_time} seconds before retrying...")
+                time.sleep(sleep_time)
+
+    log(f"      ERROR: Failed after 3 attempts. Falling back to original entries.")
+    return entries
+
+
+# ----- Hugging Face sport normalization -----------------------------------
+
+def normalize_sports_with_huggingface(entries: list[dict]) -> list[dict]:
+    """Send schedule entries with non-standard sport names to Hugging Face
+    for normalization.
+
+    Uses the Inference API.
+    Returns the entries list with updated `sport` and `tags` fields.
+    """
+    if not entries:
+        return entries
+    if not HUGGINGFACE_API_KEY:
+        log("  ERROR: HUGGINGFACE_API_KEY is not set. Falling back to original entries.")
+        return entries
+
+    prompt = build_normalization_prompt()
+    api_url = "https://api-inference.huggingface.co/models/meta-llama/Meta-Llama-3-8B-Instruct/v1/chat/completions"
+
+    log(f"  Calling Hugging Face to normalize {len(entries)} entries...")
+
+    user_message = prompt + f"\n\nHere are the entries to normalize:\n{json.dumps(entries, indent=2)}"
+
+    request_body = json.dumps({
+        "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a data normalization assistant. Always respond with valid JSON only."
+            },
+            {"role": "user", "content": user_message}
+        ],
+        "max_tokens": 8192
+    }).encode("utf-8")
+
+    for attempt in range(1, 4):
+        req = urllib.request.Request(
+            api_url,
+            data=request_body,
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {HUGGINGFACE_API_KEY}",
+            },
+            method="POST",
+        )
+
+        try:
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                resp_data = json.loads(resp.read().decode("utf-8"))
+
+            text = resp_data["choices"][0]["message"]["content"]
+            parsed = parse_normalized_json_response(text)
+            log(f"  Hugging Face normalized {len(parsed)} entries.")
+            return parsed
+
+        except Exception as e:
+            log(f"      Attempt {attempt} failed: {e}")
+            if attempt < 3:
+                sleep_time = 5 * attempt
+                log(f"      Waiting {sleep_time} seconds before retrying...")
+                time.sleep(sleep_time)
+
+    log(f"      ERROR: Failed after 3 attempts. Falling back to original entries.")
+    return entries
+
+
+# ----- XAI sport normalization --------------------------------------------
+
+def normalize_sports_with_xai(entries: list[dict]) -> list[dict]:
+    """Send schedule entries with non-standard sport names to XAI (Grok)
+    for normalization.
+
+    Uses the Chat Completions API (https://api.x.ai/v1/chat/completions).
+    Returns the entries list with updated `sport` and `tags` fields.
+    """
+    if not entries:
+        return entries
+    if not XAI_API_KEY:
+        log("  ERROR: XAI_API_KEY is not set. Falling back to original entries.")
+        return entries
+
+    prompt = build_normalization_prompt()
+    api_url = "https://api.x.ai/v1/chat/completions"
+
+    log(f"  Calling XAI to normalize {len(entries)} entries...")
+
+    user_message = prompt + f"\n\nHere are the entries to normalize:\n{json.dumps(entries, indent=2)}"
+
+    request_body = json.dumps({
+        "model": "grok-beta",
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a data normalization assistant. Always respond with valid JSON only."
+            },
+            {"role": "user", "content": user_message}
+        ]
+    }).encode("utf-8")
+
+    for attempt in range(1, 4):
+        req = urllib.request.Request(
+            api_url,
+            data=request_body,
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {XAI_API_KEY}",
+            },
+            method="POST",
+        )
+
+        try:
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                resp_data = json.loads(resp.read().decode("utf-8"))
+
+            text = resp_data["choices"][0]["message"]["content"]
+            parsed = parse_normalized_json_response(text)
+            log(f"  XAI normalized {len(parsed)} entries.")
+            return parsed
+
+        except Exception as e:
+            log(f"      Attempt {attempt} failed: {e}")
+            if attempt < 3:
+                sleep_time = 5 * attempt
+                log(f"      Waiting {sleep_time} seconds before retrying...")
+                time.sleep(sleep_time)
+
+    log(f"      ERROR: Failed after 3 attempts. Falling back to original entries.")
+    return entries
+
+
+# ----- Mistral sport normalization ------------------------------------------
+
+def normalize_sports_with_mistral(entries: list[dict]) -> list[dict]:
+    """Send schedule entries with non-standard sport names to Mistral
+    for normalization.
+
+    Uses the Chat Completions API (https://api.mistral.ai/v1/chat/completions).
+    Returns the entries list with updated `sport` and `tags` fields.
+    """
+    if not entries:
+        return entries
+    if not MISTRAL_API_KEY:
+        log("  ERROR: MISTRAL_API_KEY is not set. Falling back to original entries.")
+        return entries
+
+    prompt = build_normalization_prompt()
+    api_url = "https://api.mistral.ai/v1/chat/completions"
+
+    log(f"  Calling Mistral to normalize {len(entries)} entries...")
+
+    user_message = prompt + f"\n\nHere are the entries to normalize:\n{json.dumps(entries, indent=2)}"
+
+    request_body = json.dumps({
+        "model": "mistral-large-latest",
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a data normalization assistant. Always respond with valid JSON only."
+            },
+            {"role": "user", "content": user_message}
+        ]
+    }).encode("utf-8")
+
+    for attempt in range(1, 4):
+        req = urllib.request.Request(
+            api_url,
+            data=request_body,
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {MISTRAL_API_KEY}",
+            },
+            method="POST",
+        )
+
+        try:
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                resp_data = json.loads(resp.read().decode("utf-8"))
+
+            text = resp_data["choices"][0]["message"]["content"]
+            parsed = parse_normalized_json_response(text)
+            log(f"  Mistral normalized {len(parsed)} entries.")
+            return parsed
+
+        except Exception as e:
+            log(f"      Attempt {attempt} failed: {e}")
+            if attempt < 3:
+                sleep_time = 5 * attempt
+                log(f"      Waiting {sleep_time} seconds before retrying...")
+                time.sleep(sleep_time)
+
+    log(f"      ERROR: Failed after 3 attempts. Falling back to original entries.")
+    return entries
+
+
+# ----- Provider dispatch ---------------------------------------------------
+
+LLM_PROVIDERS = {
+    "gemini": normalize_sports_with_gemini,
+    "claude": normalize_sports_with_claude,
+    "nvidia": normalize_sports_with_nvidia,
+    "cohere": normalize_sports_with_cohere,
+    "openrouter": normalize_sports_with_openrouter,
+    "huggingface": normalize_sports_with_huggingface,
+    "xai": normalize_sports_with_xai,
+    "mistral": normalize_sports_with_mistral,
+}
 
 
 def merge_and_regroup(standard: list[dict], normalized: list[dict]) -> list[dict]:
@@ -611,6 +1140,9 @@ def merge_and_regroup(standard: list[dict], normalized: list[dict]) -> list[dict
     # Group by (community_center_id, sport, day_of_week, age_group)
     groups: dict[tuple, dict] = {}
     for entry in combined:
+        if not isinstance(entry, dict):
+            log(f"WARNING: Skipping non-dict entry in merge_and_regroup: {entry!r}")
+            continue
         key = (
             entry.get("community_center_id", ""),
             entry.get("sport", ""),
@@ -910,6 +1442,11 @@ def build_arg_parser() -> argparse.ArgumentParser:
                         "ward, phone, isFree, community_center_id, website}. "
                         "Append mode (controlled by --append) dedupes by "
                         "community_center_id.")
+    p.add_argument("--llm-provider", choices=["gemini", "claude", "nvidia", "cohere", "openrouter", "huggingface", "xai", "mistral"],
+                   default=None,
+                   help="LLM provider for sport-name normalization. "
+                        "Default: try Gemini first, fall back to OpenRouter if unsuccessful. "
+                        "Choices: gemini, claude, nvidia, cohere, openrouter, huggingface, xai, mistral.")
     return p
 
 
@@ -995,12 +1532,25 @@ def main(argv=None) -> int:
         non_std_sports = sorted(set(e["sport"] for e in non_standard_entries))
         for s in non_std_sports:
             log(f"  - {s!r}")
-        normalized_entries = normalize_sports_with_gemini(non_standard_entries)
+
+        provider_name = getattr(args, "llm_provider", None)
+        if provider_name is not None:
+            log(f"  Using LLM provider: {provider_name}")
+            normalize_fn = LLM_PROVIDERS.get(provider_name, normalize_sports_with_gemini)
+            normalized_entries = normalize_fn(non_standard_entries)
+        else:
+            log("  Default LLM flow: trying Gemini first...")
+            try:
+                normalized_entries = normalize_sports_with_gemini(non_standard_entries, raise_on_failure=True)
+            except Exception as e:
+                log(f"  Gemini normalization unsuccessful ({e}). Falling back to OpenRouter...")
+                normalized_entries = normalize_sports_with_openrouter(non_standard_entries)
+
         # Merge normalized entries back with standard entries and re-group
         all_schedules = merge_and_regroup(standard_entries, normalized_entries)
         log(f"  After merge + re-group: {len(all_schedules)} entries")
     else:
-        log("\nAll sport names are already standard — skipping Gemini normalization.")
+        log("\nAll sport names are already standard — skipping normalization.")
 
     # Stable ordering: facility, day-of-week (MON..SUN), age_group, sport,
     # then by the first slot's start time within the group.
