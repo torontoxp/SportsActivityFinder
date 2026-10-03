@@ -1,0 +1,51 @@
+name: Weekly Schedule Refresh
+
+on:
+  schedule:
+    # 1:35 AM Eastern (EDT = UTC-4 → 05:35 UTC; EST = UTC-5 → 06:35 UTC)
+    # Using 05:35 UTC which is 1:35 AM EDT (summer) / 12:35 AM EST (winter).
+    # Adjust to '35 6 * * 1' if you want 1:35 AM EST year-round instead.
+    - cron: '35 6 * * 1'
+  workflow_dispatch: # Allow manual trigger from GitHub UI
+
+env:
+  SCRIPTS_DIR: frontend/SportsActivityFinder/backend/scripts
+  AWS_DEFAULT_REGION: ca-central-1
+
+jobs:
+  fetch-and-seed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install boto3
+
+      - name: Fetch schedules
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        working-directory: ${{ env.SCRIPTS_DIR }}
+        run: |
+          echo "::group::Fetch schedules (Gemini)"
+          python fetch_schedules.py --llm-provider gemini
+          echo "::endgroup::"
+
+      - name: Seed DynamoDB
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ca-central-1
+        working-directory: ${{ env.SCRIPTS_DIR }}
+        run: |
+          echo "::group::Seed DynamoDB"
+          python seed_dynamo.py
+          echo "::endgroup::"
